@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cards.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <title>David - Intro</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/page-icon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+<body>
+    <header>
+        <img src="assets/images/logo.png" alt="Portifólio - Logo">
+        <p id="header_text">Gabriel David</p>
+
+        <nav id="menu">
+            <a id="menu_bt"><i class="material-icons" style="color: aliceblue; margin: 10px 0px 10px 10px;">menu</i></a>
+            <ul id="menu_ul">
+                <li><a href="index.html"><i class="material-icons">home</i> Home</a></li>
+                <li><a href="pages/formation.html"><i class="material-icons">school</i> Formação</a></li>
+                <li><a href="pages/projects.html"><i class="material-icons">cases</i> Projetos</a></li>
+                <li><a href="pages/contact.html"><i class="material-icons">phone</i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="page_cover">
+            <img src="assets/images/page-cover.jpg" alt="Page Cover">
+        </div>
+        <div id="perfil_img">
+            <img src="assets/images/perfil.jpeg" alt="Perfil Image">
+        </div>
+
+        <h3 id="desc"><i class="material-icons">mouse</i>Dev e Game Designer</h2>
+        <h3 id="my_name">Gabriel David</h1>
+        <h3 id="prontuario">GU3031748</h3>
+
+        <div id="page_content">
+            <h2>Descrição</h2>
+            <p class="descricao_do_topico">
+                Comecei minha carreira como programador aos 20 anos. Através do
+                Senai e amigos, conheci a programação por volta dos 18 anos, me apaixonei pela area, principalmente em <span class="highlight">Game Design </span>e <span class="highlight">Web Design</span>.
+                Iniciei meus estudos no IFSP Câmpus Guarulhos em <span class="highlight">Tecnólogo em Análise e Desenvolvimento de Sistemas</span>
+                e me encontro atualmente nos últimos dias do segundo semestre de curso e procurando uma vaga para <span class="highlight">programador estagiário</span>. Estou sempre disposto a descobrir
+                novas áreas de atuação relacionadas a programação.
+            </p>
+
+            <h1 id="expr">Principais Cursos</h1>
+            <p class="descricaoo_do_topico">Cursos recentes mais relevantes.</p>
+            <div class='card_container' id="cursos_main">
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const parent = document.getElementById('cursos_main');
+
+                        addHtmlElement(parent, cardHtml('Tecnólogo em Análise e Desenvolvimento de Sistemas', 'Programação e entendimento geral sobre computadores, inglês técnico,\
+                            Redes, entre outros.', '../assets/images/thumbnails/courses/ifsp.png', 'IFSP - Guarulhos',
+                            'http://gru.ifsp.edu.br/index.php/superiores/tecnologia-em-analise-e-desenvolvimento-de-sistemas.html', '34%'));
+
+                        addHtmlElement(parent, cardHtml('Inglês avançado', 'Curso de Inglês com foco em conversação, 3 anos de curso.',
+                            '../assets/images/thumbnails/courses/pbf.png', 'PBF', 'https://fisk.com.br/unidades/guarulhos-taboao-i', '100%'));
+
+                        addHtmlElement(parent, cardHtml('Introdução a Rust - IFSP', 'Curso de extensão do IFSP - Guarulhos.', '../assets/images/thumbnails/courses/rust.png',
+                        'Rust', 'http://gru.ifsp.edu.br/index.php', '00%'));
+
+                        addHtmlElement(parent, cardHtml('Microsoft AI900 - Senai', 'Curso introdutório a implementação de inteligência artificial em nuvem usando a plataforma\
+                            Azure, da Microsoft.', '../assets/images/thumbnails/courses/AI-900.png', 'Microsoft Ai-900',
+                            'https://guarulhos.sp.senai.br/curso/97709/122/implantacao-de-servicos-de-inteligencia-artificial-em-nuvem-microsoft-ai900', '00%'));
+                    });
+                </script>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>All Rights Reserved © 2022-2035 GABRIEL DAVID</p>
+    </footer>
+
+    <script src="scripts/common.js"></script>
+    <script src="../scripts/generateElements.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <title>David - Intro</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/page-icon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+<body>
+    <header>
+        <img src="../assets/images/logo.png" alt="Portifólio - Logo">
+        <p id="header_text">Gabriel David</p>
+
+        <nav id="menu">
+            <a id="menu_bt"><i class="material-icons" style="color: aliceblue; margin: 10px 0px 10px 10px;">menu</i></a>
+            <ul id="menu_ul">
+                <li><a href="../index.html"><i class="material-icons">home</i> Home</a></li>
+                <li><a href="formation.html"><i class="material-icons">school</i> Formação</a></li>
+                <li><a href="projects.html"><i class="material-icons">cases</i> Projetos</a></li>
+                <li><a href="contact.html"><i class="material-icons">phone</i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="cont" method="get">
+            <h1>Deixe uma mensagem:</h1>
+            
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Nome" required>
+
+            <label for="middlename">Sobrenome:</label>
+            <input type="text" id="midname" name="midname" placeholder="Sobrenome" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="number" id="phone" name="phone" maxlength="15" minlength="8" placeholder="Telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+
+            <label for="subject">Conteúdo:</label>
+            <textarea name="content" id="content" cols="6" rows="5" placeholder="Conte sobre o seu assunto!"></textarea>
+
+            <input type="submit" id="enviar_solicitacao_bt" value="Enviar">
+        </form>
+    </main>
+
+    <footer>
+        <p>All Rights Reserved © 2022-2035 GABRIEL DAVID</p>
+    </footer>
+
+    <script src="../scripts/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <title>David - Intro</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/page-icon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+<body>
+    <header>
+        <img src="../assets/images/logo.png" alt="Portifólio - Logo">
+        <p id="header_text">Gabriel David</p>
+
+        <nav id="menu">
+            <a id="menu_bt"><i class="material-icons" style="color: aliceblue; margin: 10px 0px 10px 10px;">menu</i></a>
+            <ul id="menu_ul">
+                <li><a href="../index.html"><i class="material-icons">home</i> Home</a></li>
+                <li><a href="formation.html"><i class="material-icons">school</i> Formação</a></li>
+                <li><a href="projects.html"><i class="material-icons">cases</i> Projetos</a></li>
+                <li><a href="contact.html"><i class="material-icons">phone</i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="page_content">
+            <h1>Projetos e Trabalhos</h1>
+            <p class="descricao_do_topico">Mostruário dos meus principais projetos comerciais e acadêmicos.
+            </p>
+
+            <div class="big_card_container" id="proj_main">
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const parent = document.getElementById('proj_main');
+
+                        addHtmlElement(parent, bigCardHtml('Código Instalações', 'Site Institucional', 'Site criado com o objetivo de exibir os serviços de eletricista\
+                            e assemelhados, a pagina no momento contém apresentações da empresa e de todos os serviços oferecidos e uma pagina de contato',
+                            '../assets/images/thumbnails/projects/CodigoInstalacoesHome.png', 'Código Instalações', ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
+                            'In Progress', 'https://gdavidev.github.io/Codigo_Instalacoes/'));
+                            
+                        addHtmlElement(parent, bigCardHtml('Este Portfólio', 'Portfólio', 'Criado com o objetivo de facilitar a visualização da minha trajetória profissional\
+                            e acadêmica, tanto para fins de apresentação pessoal, quanto para organizar meu progresso nos estudos futuramente auxiliando na procura de novos\
+                            cursos e a iniciação de novos projetos.', '../assets/images/thumbnails/projects/Portfolio.jpg', 'Portfolio', ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
+                            'Stable', 'https://gdavidev.github.io/Portfolio/'));
+                    });
+                </script>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>All Rights Reserved © 2022-2035 GABRIEL DAVID</p>
+    </footer>
+
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/generateElements.js"></script>
+</body>
+</html>

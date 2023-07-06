@@ -1,0 +1,134 @@
+h1 {
+    padding-top: 10rem;
+}
+
+/*----------------------- Perfil Img -----------------------*/
+#perfil_img {
+    height: 350px;
+    width: 350px;
+    margin-top: -200px;
+    margin-left: 2.5%;
+    overflow: hidden;
+}
+
+#perfil_img img {
+    width: 100%;
+    margin-top: -10%;
+    position: relative;
+    z-index: 1;
+}
+
+/*------------------------ Title -------------------------*/
+
+#desc, #prontuario {
+    padding-left: 340px;
+    font-family: 'coolvetica', sans-serif;
+    font-size: 2rem;
+    color: var(--softhighlight-color);
+}
+
+#desc {
+    margin: -140px 5% 0px 5%;
+    font-size: 2rem;
+}
+
+#my_name {
+    padding: 10px 0 10px 340px;
+    margin: -20px 5% 0px 5%;
+    font-family: 'coolvetica', sans-serif;
+    font-size: 6rem;
+    line-height: 4.8rem;
+    color: var(--hardhighlight-color);
+}
+
+#prontuario {
+    margin: -16px 5% 0px 5%;
+    font-size: 1.5rem;
+}
+
+/*----------------------- Page Cover -----------------------*/
+
+#page_cover {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 3px solid var(--highlight-color);
+}
+
+#page_cover img {
+    margin-left: calc(50% - 800px);
+    width: 1600px;
+    margin-top: -200px;
+}
+
+/* Experiencias */
+
+#experiencias {
+    width: 100%;
+    padding-top: 2rem;
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+.container_exp {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 6px;
+    width: 100%;
+}
+
+.container_exp img {
+    width: auto;
+    height: auto;
+    max-width: 240px;
+    max-height: 135px;
+}
+
+.exp_info {
+    padding: 0;
+    margin: 6px;
+    width: 90%;
+}
+
+.exp_info .exp_caracte {
+    color: rgb(187, 187, 187);
+    font-size: 1.5rem;
+}
+
+.exp_info h1 {
+    padding-top: 0;
+}
+
+@media (max-width: 820px) {
+    #perfil_img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #my_name, #desc, #prontuario {
+        margin-top: 0px;
+        margin-bottom: -16px;
+        padding-left: 0px;
+    }
+
+    #page_content {
+        padding-top: 30px;
+    }
+
+    .container_cursos, .container_exp {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .container_info {
+        width: 100%;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+        padding: 1rem 0;
+    }
+}

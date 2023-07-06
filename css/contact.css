@@ -1,0 +1,45 @@
+
+/* ----- form -----*/
+form {
+    width: 50%;
+    left: 50%;
+    padding: 2rem 0px 2rem 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Butler', sans-serif;
+    font-size: 1.4rem;
+    color: rgb(221, 244, 255);
+}
+
+input, textarea {
+    border-radius: 0;
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgb(221, 244, 255);
+}
+
+textarea {
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#enviar_solicitacao_bt {
+    margin-top: 2rem;
+    font-family: 'Butler', sans-serif;
+    background-color: rgb(221, 244, 255);
+    color: black;
+}
+
+#enviar_solicitacao_bt:hover {
+    background-color: rgb(129, 129, 129);
+}
+
+@media (max-width: 820px) {
+    form {
+        width: 100%;
+        padding: 1rem 0;
+    }
+}

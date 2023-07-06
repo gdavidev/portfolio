@@ -1,0 +1,154 @@
+:root {
+    --highlight-color: #eb5e28;
+    --hardhighlight-color: #ccc5b9;
+    --softhighlight-color: #99948B;
+    --background-color: #252422;
+    --font-color: #fffcf2;
+    --fontTitle-color: #025259;
+}
+
+@font-face {
+    font-family: "Coolvetica";
+    src: url("../assets/fonts/coolvetica/coolvetica condensed rg.otf");
+}
+
+@font-face {
+    font-family: "Butler";
+    src: url("assets/fonts/butler/Butler_Regular.otf");
+}
+
+/*----------------------- Common -----------------------*/
+
+* {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #141412;
+}
+
+main {
+    padding-top: 6rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    align-content: center;
+}
+
+/*----------------------- Header -----------------------*/
+header {
+    padding: 0.5rem;
+    background-color: rgb(17, 17, 17);
+    position: fixed;
+    width: 100vw;
+    border-bottom: 3px solid var(--highlight-color);
+    z-index: 10;
+}
+
+header img {
+    height: 3rem;
+    position: absolute;
+}
+
+header p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: var(--font-color);
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+}
+
+/*----------------------- Top nav menu -----------------------*/
+
+#menu {
+    width: 100vw;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+
+#menu ul li {
+    float: left;
+}
+
+#menu .material-icons {
+    vertical-align: -3px;
+}
+
+#menu ul a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'coolvetica', Times, serif;
+    font-size: 1.5rem;
+    padding: 0px 60px;
+    cursor: pointer;
+}
+
+#menu ul a:hover {
+    background-color: #333;
+}
+
+#menu_bt {
+    cursor: pointer;
+}
+
+/*------------------------ Content -------------------------*/
+
+#page_content {
+    color: var(--font-color);
+    margin: 0px 5% 0px 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.2rem;
+}
+
+#page_content h1 {
+    padding-top: 1rem;
+    font-size: xx-large;
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+#page_content h2 {
+    padding-top: 3rem;
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+.highlight {
+    color: var(--highlight-color);
+}
+
+/*----------------------- Footer -----------------------*/
+
+footer {
+    background-color: rgb(17, 17, 17);
+    font-family: 'coolvetica', sans-serif;
+    font-size: 1.5rem;
+    color: var(--font-color);
+    border-top: 3px solid var(--highlight-color);
+    padding: 30px 20px;
+}
+
+@media (max-width: 900px) {
+    #menu ul {
+        text-align: center;
+    }
+    
+    #menu ul li {
+        padding-bottom: 2px;
+        float: none;
+    }
+
+    #menu a {
+        font-size: 0.75rem;
+    }
+}
