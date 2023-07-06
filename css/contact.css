@@ -1,3 +1,12 @@
+:root {
+    --highlight-color: #eb5e28;
+    --hardhighlight-color: #ccc5b9;
+    --softhighlight-color: #99948B;
+    --background-color: #252422;
+    --lightbackground-color: #413f3d;
+    --font-color: #fffcf2;
+    --fontTitle-color: #025259;
+}
 
 /* ----- form -----*/
 form {

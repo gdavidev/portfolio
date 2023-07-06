@@ -86,7 +86,7 @@ header p {
 }
 
 #menu ul a:hover {
-    background-color: #333;
+    background-color: var(--lightbackground-color);
 }
 
 #menu_bt {

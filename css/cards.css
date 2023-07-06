@@ -1,3 +1,13 @@
+:root {
+    --highlight-color: #eb5e28;
+    --hardhighlight-color: #ccc5b9;
+    --softhighlight-color: #99948B;
+    --background-color: #252422;
+    --lightbackground-color: #413f3d;
+    --font-color: #fffcf2;
+    --fontTitle-color: #025259;
+}
+
 /*----------------------- Small Card -----------------------*/
 
 .card_container  {
@@ -11,7 +21,7 @@
 
 .card {
     margin: 0;
-    background-color: var(--lightbackgorund-color);
+    background-color: var(--lightbackground-color);
     padding: 6px;
     position: relative;
     display: grid;
@@ -123,6 +133,15 @@
     .big_card {
         display: block;
     }
+
+    .big_card .card_info {
+        padding-bottom: 0;
+    }
+
+    .big_card .access_link {
+        position: static;
+        word-wrap: break-word;
+    }
 }
 
 /*----------------------- Progress Bar -----------------------*/
@@ -155,7 +174,7 @@
 }
 
 .tag {
-    margin: 5px;
+    margin: 5px 5px 0 0;
     color: white;
     padding: 2px 10px;
     background-color: rgb(238, 186, 15);
