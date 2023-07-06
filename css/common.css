@@ -1,11 +1,11 @@
 :root {
-    --highlight-color: #eb5e28;
-    --hardhighlight-color: #ccc5b9;
-    --softhighlight-color: #99948B;
-    --background-color: #252422;
-    --lightbackground-color: #413f3d;
-    --font-color: #fffcf2;
-    --fontTitle-color: #025259;
+    --highlight-color: #79c8d5;
+    --hardhighlight-color: #fdaa45;
+    --softhighlight-color: #efbe9a;
+    --background-color: #222225;
+    --lightbackground-color: #272a38;
+    --font-color: #f8ffff;
+    --fontTitle-color: #dcf3f5;
 }
 
 @font-face {
@@ -101,7 +101,6 @@ header p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-align: justify;
-    text-justify: inter-word;
     font-size: 1.2rem;
 }
 
@@ -109,18 +108,18 @@ header p {
     padding-top: 1rem;
     font-size: 3rem;
     font-weight: bold;
-    color: var(--highlight-color);
+    color: var(--hardhighlight-color);
 }
 
 #page_content h2 {
     padding-top: 3rem;
     font-size: 2rem;
     font-weight: bold;
-    color: var(--highlight-color);
+    color: var(--hardhighlight-color);
 }
 
 .highlight {
-    color: var(--highlight-color);
+    color: var(--hardhighlight-color);
 }
 
 /*----------------------- Footer -----------------------*/
