@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     <title>David - Intro</title>
@@ -33,29 +34,31 @@
         </nav>
     </header>
     <main>
-        <form id="cont" method="get">
-            <h1>Deixe uma mensagem:</h1>
-            
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" placeholder="Nome" required>
-
-            <label for="middlename">Sobrenome:</label>
-            <input type="text" id="midname" name="midname" placeholder="Sobrenome" required>
-
+        <div id="page_content">
+            <form id="cont" method="get">
+                <h1>Deixe uma mensagem:</h1>
+                
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Nome" required>
+                
+                <label for="middlename">Sobrenome:</label>
+                <input type="text" id="midname" name="midname" placeholder="Sobrenome" required>
+                
             <label for="phone">Telefone:</label>
             <input type="number" id="phone" name="phone" maxlength="15" minlength="8" placeholder="Telefone" required>
-
+            
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" placeholder="E-mail" required>
-
+            
             <label for="subject">Assunto:</label>
             <input type="text" id="subject" name="subject" placeholder="Assunto" required>
-
+            
             <label for="subject">Conteúdo:</label>
             <textarea name="content" id="content" cols="6" rows="5" placeholder="Conte sobre o seu assunto!"></textarea>
-
+            
             <input type="submit" id="enviar_solicitacao_bt" value="Enviar">
         </form>
+    </div>
     </main>
 
     <footer>

@@ -56,7 +56,7 @@
                 novas áreas de atuação relacionadas a programação.
             </p>
 
-            <h1 id="expr">Principais Cursos</h1>
+            <h2 id="expr">Principais Cursos</h2>
             <p class="descricaoo_do_topico">Cursos recentes mais relevantes.</p>
             <div class='card_container' id="cursos_main">
                 <script>
@@ -64,18 +64,34 @@
                         const parent = document.getElementById('cursos_main');
 
                         addHtmlElement(parent, cardHtml('Tecnólogo em Análise e Desenvolvimento de Sistemas', 'Programação e entendimento geral sobre computadores, inglês técnico,\
-                            Redes, entre outros.', '../assets/images/thumbnails/courses/ifsp.png', 'IFSP - Guarulhos',
+                            Redes, entre outros.', 'assets/images/thumbnails/courses/ifsp.png', 'IFSP - Guarulhos',
                             'http://gru.ifsp.edu.br/index.php/superiores/tecnologia-em-analise-e-desenvolvimento-de-sistemas.html', '34%'));
 
                         addHtmlElement(parent, cardHtml('Inglês avançado', 'Curso de Inglês com foco em conversação, 3 anos de curso.',
-                            '../assets/images/thumbnails/courses/pbf.png', 'PBF', 'https://fisk.com.br/unidades/guarulhos-taboao-i', '100%'));
+                            'assets/images/thumbnails/courses/pbf.png', 'PBF', 'https://fisk.com.br/unidades/guarulhos-taboao-i', '100%'));
 
-                        addHtmlElement(parent, cardHtml('Introdução a Rust - IFSP', 'Curso de extensão do IFSP - Guarulhos.', '../assets/images/thumbnails/courses/rust.png',
+                        addHtmlElement(parent, cardHtml('Introdução a Rust - IFSP', 'Curso de extensão do IFSP - Guarulhos.', 'assets/images/thumbnails/courses/rust.png',
                             'Rust', 'http://gru.ifsp.edu.br/index.php', '00%'));
 
                         addHtmlElement(parent, cardHtml('Microsoft AI900 - Senai', 'Curso introdutório a implementação de inteligência artificial em nuvem usando a plataforma\
-                            Azure, da Microsoft.', '../assets/images/thumbnails/courses/AI-900.png', 'Microsoft Ai-900',
+                            Azure, da Microsoft.', 'assets/images/thumbnails/courses/AI-900.png', 'Microsoft Ai-900',
                             'https://guarulhos.sp.senai.br/curso/97709/122/implantacao-de-servicos-de-inteligencia-artificial-em-nuvem-microsoft-ai900', '00%'));
+                    });
+                </script>
+            </div>
+
+            <div class="big_card_container" id="proj_main">
+                <h2 id="expr">Projetos recentes</h2>
+                <p class="descricaoo_do_topico">Projetos pessoais ou comerciais em que trabalho atualmente.</p>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const parent = document.getElementById('proj_main');
+
+                        addHtmlElement(parent, bigCardHtml('Código Instalações', 'Site Institucional', 'Site criado com o objetivo de exibir os serviços de eletricista\
+                            e assemelhados, a pagina no momento contém apresentações da empresa e de todos os serviços oferecidos e uma pagina de contato. A pagina\
+                            tem cunho comercial e tem o objetivo de ser usada pela empresa.',
+                            '../assets/images/thumbnails/projects/CodigoInstalacoesHome.png', 'Código Instalações', ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
+                            'In Progress', 'https://gdavidev.github.io/Codigo_Instalacoes/'));
                     });
                 </script>
             </div>

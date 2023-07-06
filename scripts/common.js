@@ -7,8 +7,6 @@ const obj_menu_bt = document.querySelector("#menu_bt")
 window.onresize = FunUpdateCollapsableMenuBt
 window.onload = FunUpdateCollapsableMenuBt
 
-document.querySelector('main').addEventListener('click', FunCollapseMenu);
-
 function FunUpdateCollapsableMenuBt() {
     if (window.innerWidth <= 900) {
         obj_menu.prepend(obj_menu_bt)

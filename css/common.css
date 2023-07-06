@@ -3,6 +3,7 @@
     --hardhighlight-color: #ccc5b9;
     --softhighlight-color: #99948B;
     --background-color: #252422;
+    --lightbackgorund-color: #413f3d;
     --font-color: #fffcf2;
     --fontTitle-color: #025259;
 }
@@ -10,11 +11,6 @@
 @font-face {
     font-family: "Coolvetica";
     src: url("../assets/fonts/coolvetica/coolvetica condensed rg.otf");
-}
-
-@font-face {
-    font-family: "Butler";
-    src: url("assets/fonts/butler/Butler_Regular.otf");
 }
 
 /*----------------------- Common -----------------------*/
@@ -111,14 +107,14 @@ header p {
 
 #page_content h1 {
     padding-top: 1rem;
-    font-size: xx-large;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--highlight-color);
 }
 
 #page_content h2 {
     padding-top: 3rem;
-    font-size: x-large;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--highlight-color);
 }

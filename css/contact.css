@@ -9,27 +9,28 @@ form {
 }
 
 label {
-    font-family: 'Butler', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.75rem;
     font-size: 1.4rem;
-    color: rgb(221, 244, 255);
+    color: var(--hardhighlight-color);
 }
 
 input, textarea {
     border-radius: 0;
     border: none;
     font-size: 1.2rem;
-    background-color: rgb(221, 244, 255);
+    background-color: var(--lightbackgorund-color);
 }
 
 textarea {
     resize: vertical;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #enviar_solicitacao_bt {
     margin-top: 2rem;
-    font-family: 'Butler', sans-serif;
-    background-color: rgb(221, 244, 255);
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--softhighlight-color);
     color: black;
 }
 
