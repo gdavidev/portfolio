@@ -114,11 +114,14 @@
     color: var(--softhighlight-color);
 }
 
+.big_card .card_info .card_desc {
+    margin-bottom: 1rem;
+}
+
 .big_card .access_link {
     color: rgb(56, 119, 255);
     position: absolute;
     bottom: 0;
-    margin-bottom: 6px;
 }
 
 @media (max-width: 900px) {

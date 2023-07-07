@@ -109,7 +109,7 @@ header p {
     margin: 0px 5% 0px 5%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    text-align: justify;
+    text-align: initial;
     font-size: 1.2rem;
 }
 
@@ -143,6 +143,18 @@ footer {
 }
 
 @media (max-width: 900px) {
+    header img {
+        height: 2.2rem;
+    }
+    
+    header p {
+        font-size: 2rem;
+    }
+
+    #page_content {
+        font-size: 1.2rem;
+    }
+
     #menu ul {
         text-align: center;
     }
