@@ -1,35 +1,34 @@
-/* Declarando objetos */
-const obj_menu = document.querySelector("#menu")
-const obj_menu_list = document.querySelector("#menu_ul")
-const obj_menu_bt = document.querySelector("#menu_bt")
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = 'active';
 
-/* Abre e fecha menu */
-window.onresize = FunUpdateCollapsableMenuBt
-window.onload = FunUpdateCollapsableMenuBt
+        this.handleClick = this.handleClick.bind(this); //Mantêm a referencia do this quando usado em um callback na classe
+    }
 
-function FunUpdateCollapsableMenuBt() {
-    if (window.innerWidth <= 900) {
-        obj_menu.prepend(obj_menu_bt)
-        collapsed_menu = false
-        FunCollapseMenu()
-    } else {
-        obj_menu.removeChild(obj_menu_bt)
-        collapsed_menu = true
-        FunCollapseMenu()
+    handleClick() {
+        this.navList.classList.toggle(this.activeClass);
+    }
+    
+    addClickEvent() {
+        this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+
+    init() {
+        if(this.mobileMenu) {
+            this.addClickEvent();
+        }
+        return this;
     }
 }
 
-let collapsed_menu = false
-obj_menu_bt.addEventListener('click', function() { FunCollapseMenu() })
-
-function FunCollapseMenu() {
-    if(collapsed_menu == true) {
-        collapsed_menu = false
-        obj_menu.appendChild(obj_menu_list)
-    } else {
-        collapsed_menu = true
-        obj_menu.removeChild(obj_menu_list)
-    }
-}
+const mobileNavbar = new MobileNavbar(
+    "#menu_bt",
+    "#menu_ul",
+    "#menu_ul li"
+);
+mobileNavbar.init();
 
 

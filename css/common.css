@@ -22,10 +22,11 @@
 
 body {
     background-color: #141412;
+    overflow-x: hidden;
 }
 
 main {
-    padding-top: 6rem;
+    padding-top: 5rem;
     max-width: 1600px;
     margin: 0 auto;
     background-color: var(--background-color);
@@ -39,24 +40,25 @@ main {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
+}
 
 /*----------------------- Header -----------------------*/
-header {
-    padding: 0.5rem;
+#page_header {
+    position: absolute;
+    padding:0.5rem;
     background-color: rgb(17, 17, 17);
     position: fixed;
     width: 100vw;
-    border-bottom: 3px solid var(--highlight-color);
-    z-index: 10;
+    z-index: 3;
+    height: 3rem;
 }
 
-header img {
+#page_header img {
     height: 3rem;
     position: absolute;
 }
 
-header p {
+#page_header p {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -66,23 +68,30 @@ header p {
 }
 
 /*----------------------- Top nav menu -----------------------*/
-
 #menu {
+    position: fixed;
+    margin-top: 4rem;
     width: 100vw;
+    z-index: 2;
 }
 
 #menu ul {
     list-style-type: none;
     margin: 0;
-    padding: 5px;
+    padding: 5px 5px 35px 5px;
+    background-color: rgb(17, 17, 17);
+    border-bottom: 3px solid var(--highlight-color);
+    transition: 0.3s cubic-bezier(0.44, -0.01, 0.14, 0.99);
+    height: fit-content;
 }
 
 #menu ul li {
     float: left;
+    align-items: center;
 }
 
-#menu .material-icons {
-    vertical-align: -3px;
+#menu #menu_bt {
+    display: none;
 }
 
 #menu ul a {
@@ -90,8 +99,9 @@ header p {
     color: aliceblue;
     font-family: 'coolvetica', Times, serif;
     font-size: 1.5rem;
-    padding: 0px 60px;
+    padding: 5px 60px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 #menu ul a:hover {
@@ -99,6 +109,7 @@ header p {
 }
 
 #menu_bt {
+    display: none;
     cursor: pointer;
 }
 
@@ -143,11 +154,15 @@ footer {
 }
 
 @media (max-width: 900px) {
-    header img {
+    #page_header {
         height: 2.2rem;
     }
     
-    header p {
+    #page_header img {
+        height: 2.2rem;
+    }
+    
+    #page_header p {
         font-size: 2rem;
     }
 
@@ -155,8 +170,28 @@ footer {
         font-size: 1.2rem;
     }
 
+    #menu {
+        position: fixed;
+        margin-top: 2.7rem;
+    }
+
+    #menu_ul.active {
+        padding-bottom: 0;
+        transform: translateY(0%);
+    }
+
+    #menu #menu_bt {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        width: 3rem;
+    }
+
     #menu ul {
+        transform: translateY(-75%);
+        margin-top: 0;
         text-align: center;
+        padding-bottom: 3rem;
     }
     
     #menu ul li {
