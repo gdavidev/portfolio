@@ -177,8 +177,8 @@ footer {
     }
 
     #menu_ul.active {
-        padding-bottom: 0;
-        transform: translateY(0%);
+        padding-bottom: 5px;
+        transform: translateY(5%);
     }
 
     #menu #menu_bt {
