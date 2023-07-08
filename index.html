@@ -63,17 +63,17 @@
                     document.addEventListener("DOMContentLoaded", function() {
                         const parent = document.getElementById('cursos_main');
 
-                        addHtmlElement(parent, cardHtml('Tecnólogo em Análise e Desenvolvimento de Sistemas', 'Programação e entendimento geral sobre computadores, inglês técnico,\
+                        addHtmlElement(parent, cardProgressHtml('Tecnólogo em Análise e Desenvolvimento de Sistemas', 'Programação e entendimento geral sobre computadores, inglês técnico,\
                             Redes, entre outros.', 'assets/images/thumbnails/courses/ifsp.png', 'IFSP - Guarulhos',
                             'http://gru.ifsp.edu.br/index.php/superiores/tecnologia-em-analise-e-desenvolvimento-de-sistemas.html', '34%'));
 
-                        addHtmlElement(parent, cardHtml('Inglês avançado', 'Curso de Inglês com foco em conversação, 3 anos de curso.',
+                        addHtmlElement(parent, cardProgressHtml('Inglês avançado', 'Curso de Inglês com foco em conversação, 3 anos de curso.',
                             'assets/images/thumbnails/courses/pbf.png', 'PBF', 'https://fisk.com.br/unidades/guarulhos-taboao-i', '100%'));
 
-                        addHtmlElement(parent, cardHtml('Introdução a Rust - IFSP', 'Curso de extensão do IFSP - Guarulhos.', 'assets/images/thumbnails/courses/rust.png',
+                        addHtmlElement(parent, cardProgressHtml('Introdução a Rust - IFSP', 'Curso de extensão do IFSP - Guarulhos.', 'assets/images/thumbnails/courses/rust.png',
                             'Rust', 'http://gru.ifsp.edu.br/index.php', '00%'));
 
-                        addHtmlElement(parent, cardHtml('Microsoft AI900 - Senai', 'Curso introdutório a implementação de inteligência artificial em nuvem usando a plataforma\
+                        addHtmlElement(parent, cardProgressHtml('Microsoft AI900 - Senai', 'Curso introdutório a implementação de inteligência artificial em nuvem usando a plataforma\
                             Azure, da Microsoft.', 'assets/images/thumbnails/courses/AI-900.png', 'Microsoft Ai-900',
                             'https://guarulhos.sp.senai.br/curso/97709/122/implantacao-de-servicos-de-inteligencia-artificial-em-nuvem-microsoft-ai900', '00%'));
                     });
@@ -92,6 +92,20 @@
                             tem cunho comercial e tem o objetivo de ser usada pela empresa.',
                             'assets/images/thumbnails/projects/CodigoInstalacoesHome.png', 'Código Instalações', ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
                             'In Progress', 'https://gdavidev.github.io/Codigo_Instalacoes/'));
+                    });
+                </script>
+            </div>
+
+            <h2 id="expr">Experiência profissional</h2>
+            <p class="descricaoo_do_topico">Trajetória profissional</p>
+            <div class="card_container" id="experiencias"></div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const parent = document.getElementById('experiencias');
+
+                        addHtmlElement(parent, cardHtml('Rulli Standard - Auxiliar de Eletricista', 'Durante: 2 anos<br>Atividades Incluem: Montagem de painéis elétricos,\
+                            manutenção industrial, manutenção predial, instalação industrial e brevemente controle de estoque.',
+                            '../assets/images/thumbnails/exp/rulli.png', 'Rulli Standard', 'https://rullistandard.com.br'));
                     });
                 </script>
             </div>
