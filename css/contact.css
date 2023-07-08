@@ -1,4 +1,28 @@
 /* ----- form -----*/
+#contact_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.contact {
+    word-wrap: normal;
+}
+
+.contact img {
+    vertical-align: middle;
+    width: 60px;
+}
+
+.contact a {
+    color: var(--text-white);
+    vertical-align: middle;
+    font-family: 'Roboto', 'Times New Roman';
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
 form {
     width: 50%;
     left: 50%;
@@ -38,9 +62,23 @@ textarea {
     background-color: rgb(129, 129, 129);
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1200px) {
     form {
         width: 100%;
         padding: 1rem 0;
+    }
+
+    .contact a {
+        font-size: 1.25rem;
+    }
+
+    .contact img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    #contact_container {
+        display: block;
     }
 }

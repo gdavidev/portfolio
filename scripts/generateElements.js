@@ -12,7 +12,19 @@ function addHtmlElement(parent, html) {
     parent.appendChild(htmlElement);
 }
 
-function cardHtml(title, desc, img_path, alt, link, progress) {
+function cardHtml(title, desc, img_path, alt, link) {
+    const html =
+        `<div class='card'>
+            <a href='${ link }' target='_blank'><img src='${ img_path }' alt='${ alt }'></a>
+            <div class='card_info'>
+                <h3 class='card_title'>${ title }</h3>
+                ${ desc }
+            </div>
+        </div>`;
+    return html;
+}
+
+function cardProgressHtml(title, desc, img_path, alt, link, progress) {
     const html =
         `<div class='card'>
             <a href='${ link }' target='_blank'><img src='${ img_path }' alt='${ alt }'></a>
@@ -72,6 +84,7 @@ function pickTagsHtml(tags = Array()) {
         {name: 'GdScript', textColor: 'white', bgColor: 'rgb(71, 140, 191)'},
         {name: 'C', textColor: 'white', bgColor: 'rgb(92, 106, 192)'},
         {name: 'Bootstrap', textColor: 'white', bgColor: 'rgb(141, 19, 253)'},
+        {name: 'Rust', textColor: 'white', bgColor: 'rgb(247, 76, 0)'},
     ]
 
     var picked_tags_result = Array();
