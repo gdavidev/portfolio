@@ -1,206 +1,178 @@
 :root {
-    --highlight-color: #79c8d5;
-    --hardhighlight-color: #fdaa45;
-    --softhighlight-color: #efbe9a;
-    --background-color: #222225;
-    --lightbackground-color: #272a38;
-    --font-color: #f8ffff;
-    --fontTitle-color: #dcf3f5;
+  --highlight-color: #79c8d5;
+  --hardhighlight-color: #fdaa45;
+  --softhighlight-color: #efbe9a;
+  --background-color: #222225;
+  --lightbackground-color: #272a38;
+  --font-color: #f8ffff;
+  --fonttitle-color: #dcf3f5;
 }
 
 @font-face {
-    font-family: "Coolvetica";
-    src: url("../assets/fonts/coolvetica/coolvetica condensed rg.otf");
+  font-family: "Coolvetica";
+  src: url("../assets/fonts/coolvetica/coolvetica condensed rg.otf");
 }
-
 /*----------------------- Common -----------------------*/
-
 * {
-    margin: 0px;
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: #141412;
-    overflow-x: hidden;
-}
-
-main {
-    padding-top: 5rem;
-    max-width: 1600px;
-    margin: 0 auto;
-    background-color: var(--background-color);
-    align-content: center;
+  margin: 0px;
+  scroll-behavior: smooth;
 }
 
 .not_selectable {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  background-color: #141412;
+  overflow-x: hidden;
+}
+body main {
+  padding-top: 5rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  align-content: center;
 }
 
 /*----------------------- Header -----------------------*/
 #page_header {
-    position: absolute;
-    padding:0.5rem;
-    background-color: rgb(17, 17, 17);
-    position: fixed;
-    width: 100vw;
-    z-index: 3;
-    height: 3rem;
+  position: absolute;
+  padding: 0.5rem;
+  background-color: rgb(17, 17, 17);
+  position: fixed;
+  width: 100vw;
+  z-index: 3;
+  height: 3rem;
 }
-
 #page_header img {
-    height: 3rem;
-    position: absolute;
+  height: 3rem;
+  position: absolute;
 }
-
 #page_header p {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    color: var(--font-color);
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.8rem;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: var(--font-color);
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
 }
 
 /*----------------------- Top nav menu -----------------------*/
 #menu {
-    position: fixed;
-    margin-top: 4rem;
-    width: 100vw;
-    z-index: 2;
+  position: fixed;
+  margin-top: 4rem;
+  width: 100vw;
+  z-index: 2;
 }
-
-#menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 5px 5px 35px 5px;
-    background-color: rgb(17, 17, 17);
-    border-bottom: 3px solid var(--highlight-color);
-    transition: 0.3s cubic-bezier(0.44, -0.01, 0.14, 0.99);
-    height: fit-content;
-}
-
-#menu ul li {
-    float: left;
-    align-items: center;
-}
-
 #menu #menu_bt {
-    display: none;
+  display: none;
+  cursor: pointer;
 }
-
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 5px 35px 5px;
+  background-color: rgb(17, 17, 17);
+  border-bottom: 3px solid var(--highlight-color);
+  transition: 0.3s cubic-bezier(0.44, -0.01, 0.14, 0.99);
+  height: fit-content;
+}
+#menu ul li {
+  float: left;
+  align-items: center;
+}
 #menu ul a {
-    text-decoration: none;
-    color: aliceblue;
-    font-family: 'coolvetica', Times, serif;
-    font-size: 1.5rem;
-    padding: 5px 60px;
-    cursor: pointer;
-    transition: 0.3s;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "coolvetica", Times, serif;
+  font-size: 1.5rem;
+  padding: 5px 60px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-
 #menu ul a:hover {
-    background-color: var(--lightbackground-color);
-}
-
-#menu_bt {
-    display: none;
-    cursor: pointer;
+  background-color: var(--lightbackground-color);
 }
 
 /*------------------------ Content -------------------------*/
-
 #page_content {
-    color: var(--font-color);
-    margin: 0px 5% 0px 5%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    text-align: initial;
-    font-size: 1.2rem;
+  color: var(--font-color);
+  margin: 0px 5% 0px 5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: initial;
+  font-size: 1.2rem;
 }
-
 #page_content h1 {
-    padding-top: 1rem;
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--hardhighlight-color);
+  padding-top: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--hardhighlight-color);
 }
-
 #page_content h2 {
-    padding-top: 3rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--hardhighlight-color);
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--hardhighlight-color);
 }
-
-.highlight {
-    color: var(--hardhighlight-color);
+#page_content .highlight {
+  color: var(--hardhighlight-color);
 }
 
 /*----------------------- Footer -----------------------*/
-
 footer {
-    background-color: rgb(17, 17, 17);
-    font-family: 'coolvetica', sans-serif;
-    font-size: 1.5rem;
-    color: var(--font-color);
-    border-top: 3px solid var(--highlight-color);
-    padding: 30px 20px;
+  background-color: rgb(17, 17, 17);
+  font-family: "coolvetica", sans-serif;
+  font-size: 1.5rem;
+  color: var(--font-color);
+  border-top: 3px solid var(--highlight-color);
+  padding: 30px 20px;
 }
 
 @media (max-width: 900px) {
-    #page_header {
-        height: 2.2rem;
-    }
-    
-    #page_header img {
-        height: 2.2rem;
-    }
-    
-    #page_header p {
-        font-size: 2rem;
-    }
-
-    #page_content {
-        font-size: 1.2rem;
-    }
-
-    #menu {
-        position: fixed;
-        margin-top: 2.7rem;
-    }
-
-    #menu_ul.active {
-        padding-bottom: 5px;
-        transform: translateY(5%);
-    }
-
-    #menu #menu_bt {
-        position: absolute;
-        z-index: 3;
-        display: block;
-        width: 3rem;
-    }
-
-    #menu ul {
-        transform: translateY(-75%);
-        margin-top: 0;
-        text-align: center;
-        padding-bottom: 3rem;
-    }
-    
-    #menu ul li {
-        padding-bottom: 2px;
-        float: none;
-    }
-
-    #menu a {
-        font-size: 0.75rem;
-    }
+  #page_header {
+    height: 2.2rem;
+  }
+  #page_header img {
+    height: 2.2rem;
+  }
+  #page_header p {
+    font-size: 2rem;
+  }
+  #page_content {
+    font-size: 1.2rem;
+  }
+  #menu {
+    position: fixed;
+    margin-top: 2.7rem;
+  }
+  #menu #menu_ul.active {
+    padding-bottom: 5px;
+    transform: translateY(5%);
+  }
+  #menu #menu_bt {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 3rem;
+  }
+  #menu a {
+    font-size: 0.75rem;
+  }
+  #menu ul {
+    transform: translateY(-75%);
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  #menu ul li {
+    padding-bottom: 2px;
+    float: none;
+  }
 }

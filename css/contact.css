@@ -1,84 +1,78 @@
 /* ----- form -----*/
 #contact_container {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
 }
-
-.contact {
-    word-wrap: normal;
+#contact_container .contact {
+  word-wrap: normal;
 }
-
-.contact img {
-    vertical-align: middle;
-    width: 60px;
+#contact_container .contact img {
+  vertical-align: middle;
+  width: 60px;
 }
-
-.contact a {
-    color: var(--text-white);
-    vertical-align: middle;
-    font-family: 'Roboto', 'Times New Roman';
-    font-weight: 400;
-    font-size: 1.5rem;
-    text-decoration: none;
+#contact_container .contact a {
+  color: white;
+  vertical-align: middle;
+  font-family: "Roboto", "Times New Roman";
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: 0.4s;
+}
+#contact_container .contact a:hover {
+  text-decoration: underline;
+  color: #fed5a2;
 }
 
 form {
-    width: 50%;
-    left: 50%;
-    padding: 2rem 0px 2rem 25%;
-    display: flex;
-    flex-direction: column;
+  width: 50%;
+  left: 50%;
+  padding: 2rem 0px 2rem 25%;
+  display: flex;
+  flex-direction: column;
 }
-
-label {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 0.75rem;
-    font-size: 1.4rem;
-    color: var(--hardhighlight-color);
+form label {
+  font-family: "Roboto", sans-serif;
+  margin-top: 0.75rem;
+  font-size: 1.4rem;
+  color: var(--hardhighlight-color);
 }
-
-input, textarea {
-    border-radius: 0;
-    border: none;
-    font-size: 1.2rem;
-    color: var( --font-color);
-    background-color: var(--lightbackground-color);
+form input, form textarea {
+  border-radius: 0;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--font-color);
+  background-color: var(--lightbackground-color);
 }
-
-textarea {
-    resize: vertical;
-    font-family: 'Roboto', sans-serif;
+form textarea {
+  resize: vertical;
+  font-family: "Roboto", sans-serif;
 }
-
-#enviar_solicitacao_bt {
-    margin-top: 2rem;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--softhighlight-color);
-    color: black;
+form #enviar_solicitacao_bt {
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--softhighlight-color);
+  color: black;
 }
-
-#enviar_solicitacao_bt:hover {
-    background-color: rgb(129, 129, 129);
+form #enviar_solicitacao_bt:hover {
+  background-color: rgb(129, 129, 129);
 }
 
 @media (max-width: 1200px) {
-    form {
-        width: 100%;
-        padding: 1rem 0;
-    }
-
-    .contact a {
-        font-size: 1.25rem;
-    }
-
-    .contact img {
-        width: 50px;
-    }
+  form {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .contact a {
+    font-size: 1.25rem;
+  }
+  .contact img {
+    width: 50px;
+  }
 }
-
 @media (max-width: 900px) {
-    #contact_container {
-        display: block;
-    }
+  #contact_container {
+    display: block;
+  }
 }

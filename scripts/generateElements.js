@@ -85,6 +85,7 @@ function pickTagsHtml(tags = Array()) {
         {name: 'C', textColor: 'white', bgColor: 'rgb(92, 106, 192)'},
         {name: 'Bootstrap', textColor: 'white', bgColor: 'rgb(141, 19, 253)'},
         {name: 'Rust', textColor: 'white', bgColor: 'rgb(247, 76, 0)'},
+        {name: 'SASS', textColor: 'white', bgColor: 'rgb(204, 102, 153)'},
     ]
 
     var picked_tags_result = Array();
