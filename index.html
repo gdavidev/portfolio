@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="styles/css/index.css">
+    <link rel="stylesheet" href="styles/css/common.css">
+    <link rel="stylesheet" href="styles/css/cards.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-    <title>David - Intro</title>
+    <title>David - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/images/page-icon.ico">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -30,9 +30,9 @@
             <a id="menu_bt" class="not_selectable"><i class="material-icons" style="color: aliceblue; margin: 10px 0px 10px 10px;">menu</i></a>
             <ul id="menu_ul" class="not_selectable">
                 <li><a href="index.html"><i class="material-icons">home</i> Home</a></li>
-                <li><a href="pages/formation.html"><i class="material-icons">school</i> Formação</a></li>
-                <li><a href="pages/projects.html"><i class="material-icons">cases</i> Projetos</a></li>
-                <li><a href="pages/contact.html"><i class="material-icons">phone</i> Contact</a></li>
+                <li><a href="view/formation.html"><i class="material-icons">school</i> Formação</a></li>
+                <li><a href="view/projects.html"><i class="material-icons">cases</i> Projetos</a></li>
+                <li><a href="view/contact.html"><i class="material-icons">phone</i> Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -64,20 +64,6 @@
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
                         const parent = document.getElementById('cursos_main');
-
-                        addHtmlElement(parent, cardProgressHtml('Tecnólogo em Análise e Desenvolvimento de Sistemas', 'Programação e entendimento geral sobre computadores, inglês técnico,\
-                            Redes, entre outros.', 'assets/images/thumbnails/courses/ifsp.png', 'IFSP - Guarulhos',
-                            'http://gru.ifsp.edu.br/index.php/superiores/tecnologia-em-analise-e-desenvolvimento-de-sistemas.html', '34%'));
-
-                        addHtmlElement(parent, cardProgressHtml('Inglês avançado', 'Curso de Inglês com foco em conversação, 3 anos de curso.',
-                            'assets/images/thumbnails/courses/pbf.png', 'PBF', 'https://fisk.com.br/unidades/guarulhos-taboao-i', '100%'));
-
-                        addHtmlElement(parent, cardProgressHtml('Introdução a Rust - IFSP', 'Curso de extensão do IFSP - Guarulhos.', 'assets/images/thumbnails/courses/rust.png',
-                            'Rust', 'http://gru.ifsp.edu.br/index.php', '00%'));
-
-                        addHtmlElement(parent, cardProgressHtml('Microsoft AI900 - Senai', 'Curso introdutório a implementação de inteligência artificial em nuvem usando a plataforma\
-                            Azure, da Microsoft.', 'assets/images/thumbnails/courses/AI-900.png', 'Microsoft Ai-900',
-                            'https://guarulhos.sp.senai.br/curso/97709/122/implantacao-de-servicos-de-inteligencia-artificial-em-nuvem-microsoft-ai900', '00%'));
                     });
                 </script>
             </div>
@@ -88,12 +74,6 @@
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
                         const parent = document.getElementById('proj_main');
-
-                        addHtmlElement(parent, bigCardHtml('Código Instalações', 'Site Institucional', 'Site criado com o objetivo de exibir os serviços de eletricista\
-                            e assemelhados, a pagina no momento contém apresentações da empresa e de todos os serviços oferecidos e uma pagina de contato. A pagina\
-                            tem cunho comercial e tem o objetivo de ser usada pela empresa.',
-                            'assets/images/thumbnails/projects/CodigoInstalacoesHome.png', 'Código Instalações', ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
-                            'In Progress', 'https://gdavidev.github.io/Codigo_Instalacoes/'));
                     });
                 </script>
             </div>
@@ -104,10 +84,6 @@
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
                         const parent = document.getElementById('experiencias');
-
-                        addHtmlElement(parent, cardHtml('Rulli Standard - Auxiliar de Eletricista', 'Durante: 2 anos<br>Atividades Incluem: Montagem de painéis elétricos,\
-                            manutenção industrial, manutenção predial, instalação industrial e brevemente controle de estoque.',
-                            'assets/images/thumbnails/exp/rulli.png', 'Rulli Standard', 'https://rullistandard.com.br'));
                     });
                 </script>
             </div>

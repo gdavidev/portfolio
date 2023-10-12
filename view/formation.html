@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/css/common.css">
+    <link rel="stylesheet" href="../styles/css/cards.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>David - Formation</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/page-icon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+<body>
+    <header>
+        <div id="page_header">
+            <img src="../assets/images/logo.png" alt="Portifólio - Logo">
+            <p id="header_text" class="not_selectable">Gabriel David</p>
+        </div>
+
+        <nav id="menu">
+            <a id="menu_bt" class="not_selectable"><i class="material-icons" style="color: aliceblue; margin: 10px 0px 10px 10px;">menu</i></a>
+            <ul id="menu_ul" class="not_selectable">
+                <li><a href="../index.html"><i class="material-icons">home</i> Home</a></li>
+                <li><a href="formation.html"><i class="material-icons">school</i> Formação</a></li>
+                <li><a href="projects.html"><i class="material-icons">cases</i> Projetos</a></li>
+                <li><a href="contact.html"><i class="material-icons">phone</i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="page_content">
+            <h1>Formação acadêmica</h1>
+            <p class="descricao_do_topico">Um levantamento de todos os cursos em que ja terminei, comecei ou tenho o interesse em começar. <br><br>
+                (clique nas imagens para acessar o site do curso).
+            </p>
+
+            <h2>Cursos Principais</h2>
+            <p class="descricao_do_topico">Maior parte da minha trajetória acadêmica</p>
+            <div class='card_container' id="cursos_main">
+                <script type="module">
+                    import CardProgress from '../models/CardProgress.js';
+                    import coursesDB from '../json/courses.json' assert { type: "json" };
+                    
+                    console.log(coursesDB.principal[0].title);
+                    
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const parent = document.getElementById('cursos_main');
+
+                        const card = new CardProgress("", "", "", "", "", "", "");
+
+                        parent.innerHTML += card.getHtml();
+                    });
+                </script>
+            </div>
+
+            <h2>Cursos Extracurriculares</h2>
+            <p class="descricaoo_do_topico">Informação pessoal adicional referente ao meu aprendizado</p>
+            <div class='card_container' id="cursos_extr">
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const parent = document.getElementById('cursos_extr');
+                    });
+                </script>
+            </div>
+
+            <h2>Outros Cursos</h2>
+            <p class="descricaoo_do_topico">Cursos não relacionados a programação</p>
+            <div class="card_container" id="outros_cursos">
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const parent = document.getElementById('outros_cursos');
+                    });
+                </script>
+            </div>
+
+            <h2 id="expr">Experiência profissional</h2>
+            <p class="descricaoo_do_topico">Trajetória profissional</p>
+            <div class="card_container" id="experiencias"></div>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const parent = document.getElementById('experiencias');
+                    });
+                </script>
+            </div>            
+        </div>
+    </main>
+
+    <footer>
+        <p>All Rights Reserved © 2022-2035 GABRIEL DAVID</p>
+    </footer>
+
+    <script src="../scripts/common.js"></script>
+</body>
+</html>
