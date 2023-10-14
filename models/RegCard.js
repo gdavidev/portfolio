@@ -1,4 +1,6 @@
-class RegCard extends Card {
+import Card from '../models/Card.js';
+
+export default class RegCard extends Card {
     constructor(title, desc, img_path, alt, link) {
         super(title, desc, img_path, alt, link);
     }

@@ -2,16 +2,16 @@
     "other": [
         {
             "title": "Rulli Standard - Eletricista Montador",
-            "description": "Durante: 6 meses<br>Atividades Incluem: Montagem de painéis elétricos, manutenção industrial, manutenção predial, instalação industrial e brevemente controle de estoque.",
-            "image": "../assets/images/thumbnails/exp/rulli.png",
-            "category": "Rulli Standard",
+            "desc": "Durante: 6 meses<br>Atividades Incluem: Montagem de painéis elétricos, manutenção industrial, manutenção predial, instalação industrial e brevemente controle de estoque.",
+            "img_path": "../assets/images/thumbnails/exp/rulli.png",
+            "alt": "Rulli Standard",
             "link": "https://rullistandard.com.br"
         },
         {
             "title": "Rulli Standard - Auxiliar de Eletricista",
-            "description": "Durante: 1,5 anos<br>Atividades Incluem: Montagem de painéis elétricos, manutenção industrial, manutenção predial, instalação industrial e brevemente controle de estoque.",
-            "image": "../assets/images/thumbnails/exp/rulli.png",
-            "category": "Rulli Standard",
+            "desc": "Durante: 1,5 anos<br>Atividades Incluem: Montagem de painéis elétricos, manutenção industrial, manutenção predial, instalação industrial e brevemente controle de estoque.",
+            "img_path": "../assets/images/thumbnails/exp/rulli.png",
+            "alt": "Rulli Standard",
             "link": "https://rullistandard.com.br"
         }
     ]
