@@ -42,12 +42,36 @@
             </p>
 
             <div class="big_card_container" id="proj_main">
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        const parent = document.getElementById('proj_main');
-                    });
-                </script>
+                <!-- Generated Content -->
             </div>
+
+            <script type="module">
+                import BigCard from '../models/BigCard.js';
+
+                import projectsDB from '../json/projects.json' assert { type: "json" };
+                
+                document.addEventListener("DOMContentLoaded", function() {
+                    let parent;
+                            
+                    parent = document.getElementById('proj_main');
+                    const projects = projectsDB.projects;
+                    for (let i = 0; i < projects.length; i++) {
+                        const element = projects[i];
+                        const card = new BigCard(
+                            element.title,
+                            element.sub_title,
+                            element.desc,
+                            "../" + element.img_path,
+                            element.alt,
+                            element.tags,
+                            element.state,
+                            element.link
+                        );
+
+                        parent.innerHTML += card.getHtml();
+                    };
+                });
+            </script>
         </div>
     </main>
 
@@ -56,6 +80,5 @@
     </footer>
 
     <script src="../scripts/common.js"></script>
-    <script src="../scripts/generateElements.js"></script>
 </body>
 </html>

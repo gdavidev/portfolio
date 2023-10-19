@@ -61,32 +61,84 @@
             <h2 id="expr">Principais Cursos</h2>
             <p class="descricao_do_topico">Cursos recentes mais relevantes.</p>
             <div class='card_container' id="cursos_main">
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        const parent = document.getElementById('cursos_main');
-                    });
-                </script>
+                <!-- Generated Content -->
             </div>
 
             <h2 id="expr">Projetos recentes</h2>
             <p class="descricao_do_topico">Projetos pessoais ou comerciais em que trabalho atualmente.</p>
             <div class="big_card_container" id="proj_main">
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        const parent = document.getElementById('proj_main');
-                    });
-                </script>
+                <!-- Generated Content -->
             </div>
 
             <h2 id="expr">Experiência profissional</h2>
             <p class="descricaoo_do_topico">Trajetória profissional</p>
             <div class="card_container" id="experiencias"></div>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        const parent = document.getElementById('experiencias');
-                    });
-                </script>
+                <!-- Generated Content -->
             </div>
+
+            <script type="module">
+                import CardProgress from '../models/CardProgress.js';
+                import RegCard from '../models/RegCard.js';
+                import BigCard from '../models/BigCard.js';
+
+                import projectsDB from '../json/projects.json' assert { type: "json" };
+                import coursesDB from '../json/courses.json' assert { type: "json" };
+                import experienceDB from '../json/experience.json' assert { type: "json" };
+                
+                document.addEventListener("DOMContentLoaded", function() {
+                    const page_content = document.getElementById("page_content");
+                    let parent;
+                            
+                    parent = document.getElementById('cursos_main');
+                    const principal = coursesDB.principal;
+                    for (let i = 0; i < principal.length; i++) {
+                        const element = principal[i];
+                        const card = new CardProgress(
+                            element.title,
+                            element.desc,
+                            "../" + element.img_path,
+                            element.alt,
+                            element.link,
+                            element.progress
+                        );
+
+                        parent.innerHTML += card.getHtml();
+                    };
+                            
+                    parent = document.getElementById('proj_main');
+                    const projects = projectsDB.projects;
+                    for (let i = 0; i < projects.length; i++) {
+                        const element = projects[i];
+                        const card = new BigCard(
+                            element.title,
+                            element.sub_title,
+                            element.desc,
+                            "../" + element.img_path,
+                            element.alt,
+                            element.tags,
+                            element.state,
+                            element.link
+                        );
+
+                        parent.innerHTML += card.getHtml();
+                    };
+
+                    parent = document.getElementById('experiencias');
+                    const other_exp = experienceDB.other;
+                    for (let i = 0; i < other_exp.length; i++) {
+                        const element = other_exp[i];
+                        const card = new RegCard(
+                            element.title,
+                            element.desc,
+                            "../" + element.img_path,
+                            element.alt,
+                            element.link,
+                        );
+
+                        parent.innerHTML += card.getHtml();
+                    };
+                });
+            </script>    
         </div>
     </main>
 

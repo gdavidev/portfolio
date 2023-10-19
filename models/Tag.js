@@ -1,32 +1,15 @@
-class Tag {
-    constructor(name, textColor, bgColor) {
+export default class Tag {
+    constructor(name, text_color, bg_color) {
         this.name = name;
-        this.textColor = textColor;
-        this.bgColor = bgColor;
+        this.text_color = text_color;
+        this.bg_color = bg_color;
     }
 
     getHtml() {
         const html =
-            `<div class="tag" style="color: ${ this.textColor }; background-color: ${ this.bgColor };">
+            `<div class="tag" style="color: ${ this.text_color }; background-color: ${ this.bg_color };">
                 <p>${ this.name }</p>
             </div>`
         return html;
     }
-}
-
-function pickTagsHtml(tags = Array()) {
-    var picked_tags_result = Array();
-    var num_tags = 0;
-
-    knownTags.forEach((tag) => {
-        for(var i = 0; i < tags.length; i++) {
-            if(tag.name == tags[i]) {
-                picked_tags_result.push(tagHTML(tag.name, tag.textColor, tag.bgColor));
-            }
-        }
-    });
-
-    const container = picked_tags_result.join(' ')
-
-    return container;
 }

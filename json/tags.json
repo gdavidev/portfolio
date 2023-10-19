@@ -2,58 +2,58 @@
     "tags": [
         {
             "name": "HTML", 
-            "textColor": "white", 
-            "bgColor": "rgb(228, 81, 38)"
+            "text_color": "white", 
+            "bg_color": "rgb(228, 81, 38)"
         },
         {
             "name": "CSS", 
-            "textColor": "white", 
-            "bgColor": "rgb(48, 170, 221)"
+            "text_color": "white", 
+            "bg_color": "rgb(48, 170, 221)"
         },
         {
             "name": "JavaScript", 
-            "textColor": "white", 
-            "bgColor": "rgb(228, 162, 40)"
+            "text_color": "white", 
+            "bg_color": "rgb(228, 162, 40)"
         },
         {
             "name": "PHP", 
-            "textColor": "white", 
-            "bgColor": "rgb(107, 126, 183)"
+            "text_color": "white", 
+            "bg_color": "rgb(107, 126, 183)"
         },
         {
             "name": "GitHub Pages", 
-            "textColor": "white", 
-            "bgColor": "rgb(0, 0, 0)"
+            "text_color": "white", 
+            "bg_color": "rgb(0, 0, 0)"
         },
         {
             "name": "MySQL", 
-            "textColor": "white", 
-            "bgColor": "rgb(35, 120, 149)"
+            "text_color": "white", 
+            "bg_color": "rgb(35, 120, 149)"
         },
         {
             "name": "GdScript", 
-            "textColor": "white", 
-            "bgColor": "rgb(71, 140, 191)"
+            "text_color": "white", 
+            "bg_color": "rgb(71, 140, 191)"
         },
         {
             "name": "C", 
-            "textColor": "white", 
-            "bgColor": "rgb(92, 106, 192)"
+            "text_color": "white", 
+            "bg_color": "rgb(92, 106, 192)"
         },
         {
             "name": "Bootstrap", 
-            "textColor": "white", 
-            "bgColor": "rgb(141, 19, 253)"
+            "text_color": "white", 
+            "bg_color": "rgb(141, 19, 253)"
         },
         {
             "name": "Rust", 
-            "textColor": "white", 
-            "bgColor": "rgb(247, 76, 0)"
+            "text_color": "white", 
+            "bg_color": "rgb(247, 76, 0)"
         },
         {
             "name": "SASS", 
-            "textColor": "white", 
-            "bgColor": "rgb(204, 102, 153)"
+            "text_color": "white", 
+            "bg_color": "rgb(204, 102, 153)"
         }
     ]
 }

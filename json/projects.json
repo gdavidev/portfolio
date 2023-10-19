@@ -2,9 +2,9 @@
     "projects": [
         {
             "title": "Código Instalações",
-            "subtitle": "Site Institucional",
+            "sub_title": "Site Institucional",
             "desc": "Site criado com o objetivo de exibir os serviços de eletricista e assemelhados, a pagina no momento contém apresentações da empresa e de todos os serviços oferecidos e uma pagina de contato. A pagina tem cunho comercial e tem o objetivo de ser usada pela empresa.",
-            "img_path": "../assets/images/thumbnails/projects/CodigoInstalacoesHome.png",
+            "img_path": "assets/images/thumbnails/projects/CodigoInstalacoesHome.png",
             "alt": "Código Instalações",
             "tags": ["HTML", "CSS", "JavaScript", "GitHub Pages"],
             "state": "In Progress",
@@ -12,9 +12,9 @@
         },
         {
             "title": "Este Portfólio",
-            "subtitle": "Portfólio",
+            "sub_title": "Portfólio",
             "desc": "Criado com o objetivo de facilitar a visualização da minha trajetória profissional e acadêmica, tanto para fins de apresentação pessoal, quanto para organizar meu progresso nos estudos futuramente auxiliando na procura de novos cursos e a iniciação de novos projetos.",
-            "img_path": "../assets/images/thumbnails/projects/Portfolio.jpg",
+            "img_path": "assets/images/thumbnails/projects/Portfolio.jpg",
             "alt": "Portfolio",
             "tags": ["HTML", "SASS", "JavaScript", "GitHub Pages"],
             "state": "Stable",

@@ -41,6 +41,31 @@
             <p class="descricao_do_topico">Um levantamento de todos os cursos em que ja terminei, comecei ou tenho o interesse em começar. <br><br>
                 (clique nas imagens para acessar o site do curso).
             </p>
+
+            <h2>Cursos Principais</h2>
+            <p class="descricao_do_topico">Maior parte da minha trajetória acadêmica</p>
+            <div class='card_container' id="cursos_main">
+                <!-- Generated Content -->
+            </div>
+
+            <h2>Cursos Extracurriculares</h2>
+            <p class="descricaoo_do_topico">Informação pessoal adicional referente ao meu aprendizado</p>
+            <div class='card_container' id="cursos_extr">
+                <!-- Generated Content -->
+            </div>
+
+            <h2>Outros Cursos</h2>
+            <p class="descricaoo_do_topico">Cursos não relacionados a programação</p>
+            <div class="card_container" id="outros_cursos">
+                <!-- Generated Content -->
+            </div>
+
+            <h2 id="expr">Experiência profissional</h2>
+            <p class="descricaoo_do_topico">Trajetória profissional</p>
+            <div class="card_container" id="experiencias">
+                <!-- Generated Content -->
+            </div>
+
             <script type="module">
                 import CardProgress from '../models/CardProgress.js';
                 import RegCard from '../models/RegCard.js';
@@ -49,14 +74,7 @@
                 import experienceDB from '../json/experience.json' assert { type: "json" };
                 
                 document.addEventListener("DOMContentLoaded", function() {
-                    const page_content = document.getElementById("page_content");
                     let parent;
-                    
-                    page_content.innerHTML += `
-                        <h2>Cursos Principais</h2>
-                        <p class="descricao_do_topico">Maior parte da minha trajetória acadêmica</p>
-                        <div class='card_container' id="cursos_main">
-                    `;
                             
                     parent = document.getElementById('cursos_main');
                     const principal = coursesDB.principal;
@@ -72,15 +90,7 @@
                         );
 
                         parent.innerHTML += card.getHtml();
-                    }
-
-                    page_content.innerHTML += `
-                        </div>
-
-                        <h2>Cursos Extracurriculares</h2>
-                        <p class="descricaoo_do_topico">Informação pessoal adicional referente ao meu aprendizado</p>
-                        <div class='card_container' id="cursos_extr">
-                    `;
+                    };
                     
                     parent = document.getElementById('cursos_extr');
                     const courses = coursesDB.courses;
@@ -96,15 +106,7 @@
                         );
 
                         parent.innerHTML += card.getHtml();
-                    }
-
-                    page_content.innerHTML += `
-                        </div>
-
-                        <h2>Outros Cursos</h2>
-                        <p class="descricaoo_do_topico">Cursos não relacionados a programação</p>
-                        <div class="card_container" id="outros_cursos">
-                    `;
+                    };
 
                     parent = document.getElementById('outros_cursos');
                     const other = coursesDB.other;
@@ -122,14 +124,7 @@
                         parent.innerHTML += card.getHtml();
                     };
 
-                    page_content.innerHTML += `
-                        <h2 id="expr">Experiência profissional</h2>
-                        <p class="descricaoo_do_topico">Trajetória profissional</p>
-                        <div class="card_container" id="experiencias"></div>
-                    `;
-
                     parent = document.getElementById('experiencias');
-
                     const other_exp = experienceDB.other;
                     for (let i = 0; i < other_exp.length; i++) {
                         const element = other_exp[i];
@@ -143,10 +138,6 @@
 
                         parent.innerHTML += card.getHtml();
                     };
-
-                    page_content.innerHTML += `
-                        </div>
-                    `
                 });
             </script>            
         </div>
