@@ -7,23 +7,19 @@ export default class BigCard extends Card {
         this.sub_title = sub_title;
         this.tags = new TagContainer(tags);
         this.state = state;
+        this.stateColor = this.#getStateColor;
     }
-    /*
-    stateColor = 'none';
 
     #getStateColor() {
         switch (this.state) {
             case 'Stable':
-                stateColor = 'greenyellow';
-                break;
+                return 'greenyellow';
             case 'In Progress':
-                stateColor = 'yellow';
-                break;
+                return 'yellow';
             case 'Cancelled':
-                stateColor = 'red';
-                break;
+                return 'red';
         }
-    }*/
+    };
 
     getHtml() {
         const html =
