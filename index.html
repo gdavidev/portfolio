@@ -77,13 +77,13 @@
             </div>
 
             <script type="module">
-                import CardProgress from '../models/CardProgress.js';
-                import RegCard from '../models/RegCard.js';
-                import BigCard from '../models/BigCard.js';
+                import CardProgress from './models/CardProgress.js';
+                import RegCard from './models/RegCard.js';
+                import BigCard from './models/BigCard.js';
 
-                import projectsDB from '../json/projects.json' assert { type: "json" };
-                import coursesDB from '../json/courses.json' assert { type: "json" };
-                import experienceDB from '../json/experience.json' assert { type: "json" };
+                import projectsDB from './json/projects.json' assert { type: "json" };
+                import coursesDB from './json/courses.json' assert { type: "json" };
+                import experienceDB from './json/experience.json' assert { type: "json" };
                 
                 document.addEventListener("DOMContentLoaded", function() {
                     const page_content = document.getElementById("page_content");
@@ -147,6 +147,5 @@
     </footer>
 
     <script src="scripts/common.js"></script>
-    <script src="scripts/generateElements.js"></script>
 </body>
 </html>
