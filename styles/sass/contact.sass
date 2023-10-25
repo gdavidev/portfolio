@@ -1,3 +1,5 @@
+@use 'global' as *
+    
 /* ----- form -----*/
 #contact_container 
     display: flex
@@ -35,14 +37,14 @@ form
         font-family: 'Roboto', sans-serif
         margin-top: 0.75rem
         font-size: 1.4rem
-        color: var(--hardhighlight-color)
+        color: $main-color
 
     input, textarea 
         border-radius: 0
         border: none
         font-size: 1.2rem
-        color: var( --font-color)
-        background-color: var(--lightbackground-color)
+        color: $backgroundLight-color
+        background-color: $backgroundLight-color
 
     textarea 
         resize: vertical
@@ -51,7 +53,7 @@ form
     #enviar_solicitacao_bt 
         margin-top: 2rem
         font-family: 'Roboto', sans-serif
-        background-color: var(--softhighlight-color)
+        background-color: $fontHighlight-color
         color: black
 
     #enviar_solicitacao_bt:hover 

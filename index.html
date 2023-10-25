@@ -10,8 +10,6 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     <title>David - Portfolio</title>
@@ -21,32 +19,38 @@
 </head>
 <body>
     <header>
-        <div id="page_header">
-            <img src="assets/images/logo.png" alt="Portifólio - Logo">
-            <p id="header_text" class="not_selectable">Gabriel David</p>
-        </div>
-
         <nav id="menu">
-            <a id="menu_bt" class="not_selectable"><i class="material-icons" style="color: aliceblue; margin: 10px 0px 10px 10px;">menu</i></a>
-            <ul id="menu_ul" class="not_selectable">
-                <li><a href="index.html"><i class="material-icons">home</i> Home</a></li>
-                <li><a href="view/formation.html"><i class="material-icons">school</i> Formação</a></li>
-                <li><a href="view/projects.html"><i class="material-icons">cases</i> Projetos</a></li>
-                <li><a href="view/contact.html"><i class="material-icons">phone</i> Contact</a></li>
+            <a id="menu_bt" class="not_selectable"><i class="material-icons">menu</i></a>
+            <p id="header_text" class="not_selectable">Gabriel David</p>
+            <ul id="menu_ul" class="not_selectable can_transition">
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="view/formation.html"> Formação</a></li>
+                <li><a href="view/projects.html"> Projetos</a></li>
+                <li><a href="view/contact.html"> Contato</a></li>
             </ul>
         </nav>
-    </header>
+        <script type="module">
+            import Navbar from '../models/Navbar.js';
+
+            const navbar = new Navbar("#menu", "#menu_bt", "#menu_ul", true);
+            navbar.init();
+        </script>
     <main>
         <div id="page_cover">
-            <img src="assets/images/page-cover.jpg" alt="Page Cover">
+            <div id="cover_text">
+                <h1 id="title">
+                    JavaScript <br>
+                    <ul id="contact">
+                        <li><a href="http://github.com/gdavidev"><img src="assets/images/icons/github-white.png" alt="Github"></a></li>
+                        <li><a href="http://github.com/gdavidev"><img src="assets/images/icons/linkedin-white.png" alt="Linkedin"></a></li>
+                        <li><a href="http://github.com/gdavidev"><img src="assets/images/icons/instagram-white.png" alt="Instagram"></a></li>
+                    </ul>
+                    Web Developer
+                </h1>
+            </div>
+            
+            <div id="transition"></div>
         </div>
-        <div id="perfil_img">
-            <img src="assets/images/perfil.jpeg" alt="Perfil Image">
-        </div>
-
-        <h3 id="desc"><i class="material-icons">mouse</i>Dev e Game Designer</h2>
-        <h3 id="my_name">Gabriel David</h1>
-        <h3 id="prontuario">GU3031748</h3>
 
         <div id="page_content">
             <h2>Descrição</h2>
@@ -147,6 +151,5 @@
     </footer>
 
     <script src="scripts/common.js"></script>
-    <script src="scripts/generateElements.js"></script>
 </body>
 </html>
