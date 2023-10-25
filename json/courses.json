@@ -6,7 +6,7 @@
             "img_path": "assets/images/thumbnails/courses/ifsp.png",
             "alt": "IFSP - Guarulhos",
             "link": "http://gru.ifsp.edu.br/index.php/superiores/tecnologia-em-analise-e-desenvolvimento-de-sistemas.html",
-            "progress": "34%"
+            "progress": "50%"
         },
         {
             "title": "Inglês avançado",
@@ -22,7 +22,7 @@
             "img_path": "assets/images/thumbnails/courses/rust.png",
             "alt": "Rust",
             "link": "http://gru.ifsp.edu.br/index.php",
-            "progress": "00%"
+            "progress": "80%"
         },
         {
             "title": "Microsoft AI900 - Senai",
@@ -30,7 +30,7 @@
             "img_path": "assets/images/thumbnails/courses/AI-900.png",
             "alt": "Microsoft Ai-900",
             "link": "https://guarulhos.sp.senai.br/curso/97709/122/implantacao-de-servicos-de-inteligencia-artificial-em-nuvem-microsoft-ai900",
-            "progress": "00%"
+            "progress": "70%"
         }
     ],
     "courses": [
@@ -88,7 +88,7 @@
             "img_path": "assets/images/thumbnails/courses/git.jpg",
             "alt": "Git e GitHub",
             "link": "https://www.udemy.com/course/git-e-github-do-basico-ao-avancado-c-gist-e-github-view/?kw=git+e+github&src=sac",
-            "progress": "15%"
+            "progress": "30%"
         }
     ],
     "other": [

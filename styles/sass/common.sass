@@ -1,172 +1,158 @@
-:root 
-    --highlight-color: #79c8d5
-    --hardhighlight-color: #fdaa45
-    --softhighlight-color: #efbe9a
-    --background-color: #222225
-    --lightbackground-color: #272a38
-    --font-color: #f8ffff
-    --fonttitle-color: #dcf3f5
-
-@font-face 
-    font-family: "Coolvetica"
-    src: url("../assets/fonts/coolvetica/coolvetica condensed rg.otf")
-
+@use 'global' as *
+    
 /*----------------------- Common -----------------------*/
-
-* 
-    margin: 0px
-    scroll-behavior: smooth
-
-.not_selectable 
-    -webkit-tap-highlight-color: transparent
-    -webkit-touch-callout: none
-    -webkit-user-select: none
-    -khtml-user-select: none
-    -moz-user-select: none
-    -ms-user-select: none
-    user-select: none
-
 body 
-    background-color: #141412
+    background-color: $main-color
     overflow-x: hidden
 
-    main 
-        padding-top: 5rem
+    main
         max-width: 1600px
         margin: 0 auto
-        background-color: var(--background-color)
+        background-color: $background-color
         align-content: center
 
-/*----------------------- Header -----------------------*/
-#page_header 
-    position: absolute
-    padding:0.5rem
-    background-color: rgb(17, 17, 17)
-    position: fixed
-    width: 100vw
-    z-index: 3
-    height: 3rem
-
-    img 
-        height: 3rem
-        position: absolute
-
-    p 
-        width: 100%
-        margin: auto
-        text-align: center
-        color: var(--font-color)
-        font-family: 'Dancing Script', cursive
-        font-size: 2.8rem
-
 /*----------------------- Top nav menu -----------------------*/
-#menu 
+.header_scrolled
+    background-color: $navbarBackground-color !important
+
+    a
+        &:hover
+            background-color: lighten($navbarBackground-color, 10%) !important
+
+#menu
     position: fixed
-    margin-top: 4rem
-    width: 100vw
+    width: 100%
     z-index: 2
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-evenly
+    margin: 0
+    padding: 0 20px
+    background-color: none
+    height: fit-content
+    color: $fontWhite-color 
+    transition: 0.4s
 
     #menu_bt 
         display: none
         cursor: pointer
 
+    #header_text
+        text-align: left
+        font-family: 'Dancing Script', cursive
+        color: inherit
+        font-size: 2.8rem
+
     ul 
         list-style-type: none
-        margin: 0
-        padding: 5px 5px 35px 5px
-        background-color: rgb(17, 17, 17)
-        border-bottom: 3px solid var(--highlight-color)
-        transition: 0.3s cubic-bezier(0.44, -0.01, 0.14, 0.99)
-        height: fit-content
+        display: flex
+        flex-wrap: nowrap
+        padding: 0
 
         li 
-            float: left
+            display: flex
             align-items: center
+            min-width: 20ch
 
         a 
+            width: 100%
+            height: 100%
+            display: flex
+            flex-wrap: nowrap
+            align-items: center
+            justify-content: center
             text-decoration: none
-            color: aliceblue
-            font-family: 'coolvetica', Times, serif
+            color: inherit
+            font-family: 'Raleway', sans-serif
+            font-weight: 900
             font-size: 1.5rem
-            padding: 5px 60px
             cursor: pointer
-            transition: 0.3s
 
             &:hover 
-                background-color: var(--lightbackground-color)
+                background-color: transparentize(lighten($navbarBackground-color, 10%), 0.5)
 
 /*------------------------ Content -------------------------*/
 
 #page_content 
-    color: var(--font-color)
+    color: $fontBlack-color
     margin: 0px 5% 0px 5%
-    font-family: 'Roboto', sans-serif
-    font-weight: 400
     text-align: initial
     font-size: 1.2rem
+    font-family: 'Raleway', sans-serif
 
-    h1 
-        padding-top: 3rem
-        font-size: 3rem
-        font-weight: bold
-        color: var(--hardhighlight-color)
+    p
+        font-weight: 500
 
     h2 
         padding-top: 3rem
         font-size: 2rem
-        font-weight: bold
-        color: var(--hardhighlight-color)
+        font-weight: 800
+        color: $fontTitle-color
 
     .highlight 
-        color: var(--hardhighlight-color)
+        color: $mainHighlight-color
 
 /*----------------------- Footer -----------------------*/
 
 footer 
-    background-color: rgb(17, 17, 17)
-    font-family: 'coolvetica', sans-serif
+    background-color: $footerBackground-color
+    font-family: 'Raleway', sans-serif
+    font-weight: 900
     font-size: 1.5rem
-    color: var(--font-color)
-    border-top: 3px solid var(--highlight-color)
+    color: $fontWhite-color
     padding: 30px 20px
 
-@media (max-width: 900px) 
-    #page_header 
-        height: 2.2rem
+.can_transition
+    transition: 0.3s cubic-bezier(0.44, -0.01, 0.14, 0.99)
 
-        img 
-            height: 2.2rem
-
-        p 
-            font-size: 2rem
-
-
-    #page_content 
-        font-size: 1.2rem
+@media (max-width: 900px)
+    .header_scrolled #menu_ul
+            background-color: $navbarBackground-color !important
 
     #menu 
         position: fixed
-        margin-top: 2.7rem
+        display: flex
+        flex-wrap: nowrap
+        justify-content: flex-start
+        padding: 0
 
-        #menu_ul.active 
-            padding-bottom: 5px
-            transform: translateY(5%)
+        #header_text
+            margin: auto
+            font-size: 3rem
 
-        #menu_bt 
-                position: absolute
-                z-index: 3
-                display: block
-                width: 3rem
-
-        a 
-            font-size: 0.75rem
-
-        ul 
-            transform: translateY(-75%)
-            margin-top: 0
+        #menu_ul
+            position: absolute
+            right: 0
+            height: 100vh
+            margin-top: 56px
+            width: 40%
+            background-color: #00000000
+            padding: 40px
+            transform: translateX(100%)
             text-align: center
-            padding-bottom: 3rem
+            display: block
         
             li 
-                padding-bottom: 2px
+                padding-bottom: 15px
                 float: none
+
+                a, i
+                    font-size: 2rem
+
+        #menu_ul.active
+            transform: translateX(0%)
+
+        #menu_bt
+            position: fixed
+            z-index: 3
+            display: block
+            margin:
+                left: 88%
+                right: 30px
+                top: 10px 
+
+            i
+                font-size: 40px
+
+    #page_content 
+        font-size: 1.2rem
