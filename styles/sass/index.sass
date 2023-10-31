@@ -7,37 +7,27 @@
     background: url('../../assets/images/page-cover.png') no-repeat center center
     background-size: cover
 
-    #tech_and_links, #title
+    #title
         position: absolute
-        margin-top: 60vh
+        top: 70vh
         color: $fontWhite-color
         font-family: 'Raleway', sans-serif
         font-weight: 900
         padding-left: 2rem
-        font-size: 3.5rem
+        font-size: min(calc( 1600px * 0.09 ), 9vw)
+        line-height: 0.8
+
+    #tech_and_contact
         display: flex
-        flex-wrap: wrap
-
-    #title
-        margin-top: 70vh
-        font-size: 7rem
-
-    #transition
-        position: relative
-        top: 100vh
-        height: 6vh
-        background-image: linear-gradient(rgba(0, 0, 0, 0), $background-color)
 
     #contact
-        position: relative
-        bottom: -40px
         list-style-type: none
         display: flex
         flex-wrap: nowrap
         padding-left: 20px
 
         li
-            width: 50px
+            width: min(calc( 1600px * 0.05 ), 5vw)
             transition-duration: 0.3s
             padding-right: 10px
 
@@ -47,84 +37,10 @@
             img
                 position: relative
                 top: 10%
-                width: 50px
+                width: min(calc( 1600px * 0.05 ), 5vw)
 
-
-@media (max-width: 900px)
-    #page_cover
-        #tech_and_links
-            margin-top: 70vh
-            font-size: 2.5rem
-        
-        #title
-            margin-top: 78vh
-            font-size: 5rem
-        
-        #contact
-            bottom: -30px
-
-            li 
-                width: 40px
-
-                img
-                    width: 40px
-
-@media (max-width: 650px)
-    #page_cover
-        #tech_and_links
-            margin-top: 70vh
-            font-size: 2rem
-        
-        #title
-            margin-top: 76vh
-            font-size: 4rem
-        
-        #contact
-            right: 10px
-            bottom: -20px
-
-            li 
-                width: 30px
-
-                img
-                    width: 30px
-
-@media (max-width: 550px)
-    #page_cover
-        #tech_and_links
-            margin-top: 70vh
-            font-size: 1.8rem
-        
-        #title
-            margin-top: 76vh
-            font-size: 3.2rem
-        
-        #contact
-            right: 10px
-            bottom: -20px
-
-            li 
-                width: 30px
-
-                img
-                    width: 30px
-
-@media (max-width: 470px)
-    #page_cover
-        #tech_and_links
-            margin-top: 80vh
-            font-size: 1.25rem
-        
-        #title
-            margin-top: 85vh
-            font-size: 2.5rem
-        
-        #contact
-            right: 220px
-            bottom: -90px
-
-            li 
-                width: 30px
-
-                img
-                    width: 30px
+    #gradient_transition
+        position: relative
+        top: 100vh
+        height: 6vh
+        background-image: linear-gradient(rgba(0, 0, 0, 0), $background-color)

@@ -34,8 +34,8 @@ export default class BigCard extends Card {
                         ${ this.tags.getHtml() }
                         <p class="card_desc">${ this.desc }</p>
                         <p class="project_state" >State: <span style='color:${ this.stateColor };'>${ this.state }</span></p>
-                        <a href="${ this.link }" class="access_link">${ this.link }</a>
                     </div>
+                    <a href="${ this.link }" class="access_link">${ this.link }</a>
                 </div>
             </div>`;
         
