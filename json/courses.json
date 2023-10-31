@@ -31,6 +31,14 @@
             "alt": "Microsoft Ai-900",
             "link": "https://guarulhos.sp.senai.br/curso/97709/122/implantacao-de-servicos-de-inteligencia-artificial-em-nuvem-microsoft-ai900",
             "progress": "70%"
+        },
+        {
+            "title": "Introdução a Redes",
+            "desc": "Introdução aos conceitos e configuração de redes de computadores, cabeada e wifi.",
+            "img_path": "assets/images/thumbnails/courses/cisco.jpg",
+            "alt": "Cisco Networking Academy",
+            "link": "https://www.netacad.com",
+            "progress": "100%"
         }
     ],
     "courses": [
