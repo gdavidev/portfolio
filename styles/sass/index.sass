@@ -24,7 +24,7 @@
         list-style-type: none
         display: flex
         flex-wrap: nowrap
-        padding-left: 20px
+        padding-left: calc( min(calc( 1600px * 0.05 ), 5vw) / 4 )
 
         li
             width: min(calc( 1600px * 0.05 ), 5vw)
@@ -37,10 +37,19 @@
             img
                 position: relative
                 top: 10%
-                width: min(calc( 1600px * 0.05 ), 5vw)
+                width: 100%
 
     #gradient_transition
         position: relative
         top: 100vh
         height: 6vh
         background-image: linear-gradient(rgba(0, 0, 0, 0), $background-color)
+
+@media (max-width: 900px)
+    #page_cover > #title
+        padding-left: 1rem
+        font-size: 12vw
+
+        #contact > li
+            width: 7vw
+    
