@@ -1,0 +1,91 @@
+@use 'global' as *
+
+/*----------------------- Page Cover -----------------------*/
+#page_cover
+    height: 106vh
+    width: 100%
+    background: url('../assets/images/page-cover.png') no-repeat center center
+    background-size: cover
+
+    #cover_text
+        position: absolute
+        margin-top: 60vh
+        color: $fontWhite-color
+        font-family: 'Raleway', sans-serif
+        font-weight: 900
+        padding-left: 2rem
+
+        #title
+            font-size: 7rem
+            line-height: 6rem
+            display: flex
+            flex-wrap: wrap
+
+    #contact
+        list-style-type: none
+        display: flex
+        flex-wrap: nowrap
+        padding-left: 20px
+
+        li
+            width: 50px
+            transition-duration: 0.3s
+            padding-right: 10px
+
+            &:hover
+                transform: translateY(-10%)
+
+            img
+                width: 50px
+
+    #transition
+        position: relative
+        top: 100vh
+        height: 6vh
+        background-image: linear-gradient(rgba(0, 0, 0, 0), $background-color)
+
+@media (max-width: 900px)
+    #page_cover
+        #cover_text
+            margin-top: 70vh
+
+            #title
+                font-size: 5rem
+                line-height: 4.5rem
+
+        #contact
+            li
+                width: 30px
+
+                img
+                    width: 30px
+
+@media (max-width: 650px)
+    #page_cover
+        #cover_text
+            margin-top: 75vh
+
+            #title
+                font-size: 3.5rem
+                line-height: 3rem
+
+    #contact
+        li
+            width: 30px
+
+            img
+                width: 30px
+
+@media (max-width: 470px)
+    #page_cover
+        #cover_text
+            margin-top: 75vh
+
+            #title
+                font-size: 3.5rem
+                line-height: 3rem
+
+    #contact
+        position: absolute
+        top: -42px
+        left: 10px
