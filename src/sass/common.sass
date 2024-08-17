@@ -1,8 +1,8 @@
 @use 'global' as *
-    
+
 /*----------------------- Common -----------------------*/
-body 
-    background-image: url('../../assets/images/background-texture.png')
+body
+    background-image: url('./../assets/images/background-texture.png')
     overflow-x: hidden
 
     main
@@ -32,10 +32,10 @@ body
     padding: 0 20px
     background-color: none
     height: fit-content
-    color: $fontWhite-color 
+    color: $fontWhite-color
     transition: 0.4s
 
-    #menu_bt 
+    #menu_bt
         display: none
         cursor: pointer
 
@@ -45,18 +45,18 @@ body
         color: inherit
         font-size: 2.8rem
 
-    ul 
+    ul
         list-style-type: none
         display: flex
         flex-wrap: nowrap
         padding: 0
 
-        li 
+        li
             display: flex
             align-items: center
             min-width: 20ch
 
-        a 
+        a
             width: 100%
             height: 100%
             display: flex
@@ -70,12 +70,12 @@ body
             font-size: 1.5rem
             cursor: pointer
 
-            &:hover 
+            &:hover
                 background-color: transparentize(lighten($navbarBackground-color, 10%), 0.5)
 
 /*------------------------ Content -------------------------*/
 
-#page_content 
+#page_content
     color: $fontBlack-color
     margin: 0px 5% 0px 5%
     text-align: initial
@@ -85,18 +85,18 @@ body
     p
         font-weight: 500
 
-    h2 
+    h2
         padding-top: 3rem
         font-size: 2rem
         font-weight: 800
         color: $fontTitle-color
 
-    .highlight 
+    .highlight
         color: $mainHighlight-color
 
 /*----------------------- Footer -----------------------*/
 
-footer 
+footer
     background-color: $footerBackground-color
     font-family: 'Raleway', sans-serif
     font-weight: 900
@@ -110,9 +110,9 @@ footer
 
 @media (max-width: 900px)
     .header_scrolled #menu_ul
-            background-color: $navbarBackground-color !important
+        background-color: $navbarBackground-color !important
 
-    #menu 
+    #menu
         position: fixed
         display: flex
         flex-wrap: nowrap
@@ -134,8 +134,8 @@ footer
             transform: translateX(100%)
             text-align: center
             display: block
-        
-            li 
+
+            li
                 padding-bottom: 15px
                 float: none
 
@@ -152,10 +152,10 @@ footer
             margin:
                 left: 88%
                 right: 30px
-                top: 10px 
+                top: 10px
 
             i
                 font-size: 40px
 
-    #page_content 
+    #page_content
         font-size: 1.2rem

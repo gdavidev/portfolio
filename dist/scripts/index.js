@@ -16,13 +16,13 @@ import Tag from '../models/Components/Tag.js';
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = new Navbar("#menu", "#menu_bt", "#menu_ul", true);
     navbar.init();
-    fetch('./json/courses.json')
+    fetch('./dist/json/courses.json')
         .then((resp) => resp.json())
         .then((data) => __awaiter(this, void 0, void 0, function* () { loadCursos(data); }));
-    fetch('./json/projects.json')
+    fetch('./dist/json/projects.json')
         .then((resp) => resp.json())
         .then((data) => __awaiter(this, void 0, void 0, function* () { loadProjetos(data); }));
-    fetch('./json/experience.json')
+    fetch('./dist/json/experience.json')
         .then((resp) => resp.json())
         .then((data) => __awaiter(this, void 0, void 0, function* () { loadExperiencias(data); }));
 });
@@ -32,7 +32,7 @@ function loadCursos(coursesDB) {
         const principal = coursesDB.principal;
         for (let i = 0; i < principal.length; i++) {
             const node = principal[i];
-            const card = new CardProgress(node.title, node.desc, node.img_path, node.alt, node.link, node.progress);
+            const card = new CardProgress(node.title, node.desc, './dist/' + node.img_path, node.alt, node.link, node.progress);
             cursosMain.innerHTML += card.getHtml();
         }
         ;
@@ -40,7 +40,7 @@ function loadCursos(coursesDB) {
 }
 function loadProjetos(projectsDB) {
     return __awaiter(this, void 0, void 0, function* () {
-        let tagsDB = yield fetch('./json/tags.json')
+        let tagsDB = yield fetch('./dist/json/tags.json')
             .then((resp) => resp.json())
             .then((data) => data);
         const projMain = document.getElementById('proj_main');
@@ -48,7 +48,7 @@ function loadProjetos(projectsDB) {
             const projects = projectsDB.projects;
             for (let i = 0; i < projects.length; i++) {
                 const node = projects[i];
-                const card = new BigCard(node.title, node.desc, node.img_path, node.alt, node.link, node.sub_title, new TagContainer(Tag.makeTagList(node.tags), tagsDB), node.state);
+                const card = new BigCard(node.title, node.desc, './dist/' + node.img_path, node.alt, node.link, node.sub_title, new TagContainer(Tag.makeTagList(node.tags), tagsDB), node.state);
                 projMain.innerHTML += card.getHtml();
             }
             ;
@@ -61,7 +61,7 @@ function loadExperiencias(experienceDB) {
         const other_exp = experienceDB.other;
         for (let i = 0; i < other_exp.length; i++) {
             const node = other_exp[i];
-            const card = new RegCard(node.title, node.desc, node.img_path, node.alt, node.link);
+            const card = new RegCard(node.title, node.desc, './dist/' + node.img_path, node.alt, node.link);
             experiencias.innerHTML += card.getHtml();
         }
         ;

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 async function loadProjetos(projectsDB: any) {
-    let tagsDB: any = await fetch('./json/tags.json')
+    let tagsDB: any = await fetch('./../json/tags.json')
         .then((resp) => resp.json())
         .then((data) => data);
 
@@ -25,7 +25,7 @@ async function loadProjetos(projectsDB: any) {
             const card = new BigCard(
                 node.title,
                 node.desc,
-                node.img_path,
+                "../" + node.img_path,
                 node.alt,
                 node.link,
                 node.sub_title,

@@ -9,15 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const navbar = new Navbar("#menu", "#menu_bt", "#menu_ul", true);
     navbar.init();
 
-    fetch('./json/courses.json')
+    fetch('./dist/json/courses.json')
         .then((resp: Response): Promise<any> => resp.json())
         .then(async (data: any): Promise<void> => { loadCursos(data); });
 
-    fetch('./json/projects.json')
+    fetch('./dist/json/projects.json')
         .then((resp: Response): Promise<any> => resp.json())
         .then(async (data: any): Promise<void> => { loadProjetos(data); });
 
-    fetch('./json/experience.json')
+    fetch('./dist/json/experience.json')
         .then((resp: Response): Promise<any> => resp.json())
         .then(async (data: any): Promise<void> => { loadExperiencias(data); });
 });
@@ -31,7 +31,7 @@ function loadCursos(coursesDB: any) {
                 const card = new CardProgress(
                     node.title,
                     node.desc,
-                    node.img_path,
+                    './dist/' + node.img_path,
                     node.alt,
                     node.link,
                     node.progress
@@ -42,7 +42,7 @@ function loadCursos(coursesDB: any) {
 }
 
 async function loadProjetos(projectsDB: any) {
-    let tagsDB: any = await fetch('./json/tags.json')
+    let tagsDB: any = await fetch('./dist/json/tags.json')
         .then((resp) => resp.json())
         .then((data) => data);
 
@@ -54,7 +54,7 @@ async function loadProjetos(projectsDB: any) {
             const card = new BigCard(
                 node.title,
                 node.desc,
-                node.img_path,
+                './dist/' + node.img_path,
                 node.alt,
                 node.link,
                 node.sub_title,
@@ -75,7 +75,7 @@ function loadExperiencias(experienceDB: any) {
             const card = new RegCard(
                 node.title,
                 node.desc,
-                node.img_path,
+                './dist/' + node.img_path,
                 node.alt,
                 node.link,
             );

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function loadProjetos(projectsDB) {
     return __awaiter(this, void 0, void 0, function* () {
-        let tagsDB = yield fetch('./json/tags.json')
+        let tagsDB = yield fetch('./../json/tags.json')
             .then((resp) => resp.json())
             .then((data) => data);
         let projMain = document.getElementById('proj_main');
@@ -28,7 +28,7 @@ function loadProjetos(projectsDB) {
             const projects = projectsDB.projects;
             for (let i = 0; i < projects.length; i++) {
                 const node = projects[i];
-                const card = new BigCard(node.title, node.desc, node.img_path, node.alt, node.link, node.sub_title, new TagContainer(Tag.makeTagList(node.tags), tagsDB), node.state);
+                const card = new BigCard(node.title, node.desc, "../" + node.img_path, node.alt, node.link, node.sub_title, new TagContainer(Tag.makeTagList(node.tags), tagsDB), node.state);
                 projMain.innerHTML += card.getHtml();
             }
             ;

@@ -1,9 +1,9 @@
 @use 'global' as *
 
-@use 'cards/_big-card'
-@use 'cards/_reg-card'
-@use 'cards/_tags'
-    
+@use './cards/_big-card'
+@use './cards/_reg-card'
+@use './cards/_tags'
+
 /*----------------------- Small Card -----------------------*/
 
 .card_container
@@ -11,6 +11,6 @@
     grid-template-columns: 1fr 1fr
     column-gap: 0.5rem
 
-@media (max-width: 1450px) 
-    .card_container 
+@media (max-width: 1450px)
+    .card_container
         grid-template-columns: 1fr
