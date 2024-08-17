@@ -11,31 +11,36 @@
     transition: 0.2s
     box-shadow: 3px 3px 7px #00000055
 
-    img 
+    img
         max-width: 240px
         max-height: 135px
 
-    .card_title 
+    .card_title
         font-size: 1.5rem
         font-weight: bold
         color: $fontHighlight-color
-    
+
     &:hover
         border-left: 10px solid lighten($mainHighlight-color, 10%)
 
-.card_progress_bar 
+    .card_date
+        font-size: 1rem
+        color: #666666
+        margin-bottom: 3px
+
+.card_progress_bar
     grid-column: 1 / 3 //Ocupar todas as colunas
     display: flex
     width: 100%
     height: 1.25rem
     margin-bottom: 4px
 
-    .card_progress_bar_border 
+    .card_progress_bar_border
         width: 100%
         border: 2px solid $mainHighlight-color
         height: inherit
-    
-    .card_progress_bar_fill 
+
+    .card_progress_bar_fill
         background-color: $mainHighlight-color
         height: inherit
 
@@ -43,12 +48,12 @@
         font-size: 1.2rem
         font-weight: bold
 
-@media (max-width: 710px) 
+@media (max-width: 710px)
     .card
         display: flex
         flex-direction: column
         align-items: center
 
-        .card_info 
+        .card_info
             width: 100%
             text-align: center

@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch('./../json/experience.json')
         .then((resp) => resp.json())
         .then((data) => __awaiter(this, void 0, void 0, function* () {
+        loadExperiencias(data);
         loadExperienciasAdcio(data);
     }));
 });
@@ -30,9 +31,9 @@ function loadCursosMain(coursesDB) {
     return __awaiter(this, void 0, void 0, function* () {
         let cursosMain = document.getElementById('cursos_main');
         if (cursosMain) {
-            const principal = coursesDB.principal;
-            for (let i = 0; i < principal.length; i++) {
-                const node = principal[i];
+            const main = coursesDB.main;
+            for (let i = 0; i < main.length; i++) {
+                const node = main[i];
                 const card = new CardProgress(node.title, node.desc, "../" + node.img_path, node.alt, node.link, node.progress);
                 cursosMain.innerHTML += card.getHtml();
             }
@@ -67,6 +68,18 @@ function loadCursosOutro(coursesDB) {
             ;
         }
     });
+}
+function loadExperiencias(experienceDB) {
+    const exprMain = document.getElementById('expr_main');
+    if (exprMain) {
+        const main = experienceDB.main;
+        for (let i = 0; i < main.length; i++) {
+            const node = main[i];
+            const card = new RegCard(node.title, node.desc, "../" + node.img_path, node.alt, node.link);
+            exprMain.innerHTML += card.getHtml();
+        }
+        ;
+    }
 }
 function loadExperienciasAdcio(experienceDB) {
     return __awaiter(this, void 0, void 0, function* () {

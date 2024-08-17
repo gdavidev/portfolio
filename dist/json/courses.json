@@ -1,12 +1,12 @@
 {
-    "principal": [
+    "main": [
         {
             "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
             "desc": "Programação e entendimento geral sobre computadores, inglês técnico, Redes, entre outros.",
             "img_path": "assets/images/thumbnails/courses/ifsp.png",
             "alt": "IFSP - Guarulhos",
             "link": "http://gru.ifsp.edu.br/index.php/superiores/tecnologia-em-analise-e-desenvolvimento-de-sistemas.html",
-            "progress": "50%"
+            "progress": "73%"
         },
         {
             "title": "Inglês avançado",
@@ -14,6 +14,24 @@
             "img_path": "assets/images/thumbnails/courses/pbf.png",
             "alt": "PBF",
             "link": "https://fisk.com.br/unidades/guarulhos-taboao-i",
+            "progress": "100%"
+        }
+    ],
+    "courses": [
+        {
+            "title": "Microsoft AI900 - Senai",
+            "desc": "Curso introdutório a implementação de inteligência artificial em nuvem usando a plataforma Azure, da Microsoft.",
+            "img_path": "assets/images/thumbnails/courses/ai900.png",
+            "alt": "Microsoft Ai-900",
+            "link": "https://guarulhos.sp.senai.br/curso/97709/122/implantacao-de-servicos-de-inteligencia-artificial-em-nuvem-microsoft-ai900",
+            "progress": "100%"
+        },
+        {
+            "title": "Introdução a Redes",
+            "desc": "Introdução aos conceitos e configuração de redes de computadores, cabeada e wifi.",
+            "img_path": "assets/images/thumbnails/courses/cisco.jpg",
+            "alt": "Cisco Networking Academy",
+            "link": "https://www.netacad.com",
             "progress": "100%"
         },
         {
@@ -25,30 +43,20 @@
             "progress": "80%"
         },
         {
-            "title": "Microsoft AI900 - Senai",
-            "desc": "Curso introdutório a implementação de inteligência artificial em nuvem usando a plataforma Azure, da Microsoft.",
-            "img_path": "assets/images/thumbnails/courses/AI-900.png",
-            "alt": "Microsoft Ai-900",
-            "link": "https://guarulhos.sp.senai.br/curso/97709/122/implantacao-de-servicos-de-inteligencia-artificial-em-nuvem-microsoft-ai900",
-            "progress": "70%"
+            "title": "JavaScript e TypeScript",
+            "desc": "Javascript e TypeScript - front-end e back-end (Full Stack) - Node, Express, noSQL, React, hooks, Redux, Design Patterns",
+            "img_path": "assets/images/thumbnails/courses/typescript.jpg",
+            "alt": "Typescript",
+            "link": "https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado",
+            "progress": "07%"
         },
-        {
-            "title": "Introdução a Redes",
-            "desc": "Introdução aos conceitos e configuração de redes de computadores, cabeada e wifi.",
-            "img_path": "assets/images/thumbnails/courses/cisco.jpg",
-            "alt": "Cisco Networking Academy",
-            "link": "https://www.netacad.com",
-            "progress": "100%"
-        }
-    ],
-    "courses": [
         {
             "title": "Desenvolvimento Web Completo",
             "desc": "Domine Web - 20 Cursos - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC e muito mais!",
             "img_path": "assets/images/thumbnails/courses/web-dev.jpg",
             "alt": "Web Development",
             "link": "https://www.udemy.com/course/web-completo/?src=sac&kw=desenvolvimento",
-            "progress": "05%"
+            "progress": "11%"
         },
         {
             "title": "Programação em Python",
@@ -80,7 +88,7 @@
             "img_path": "assets/images/thumbnails/courses/blender.jpg",
             "alt": "Blender",
             "link": "https://www.udemy.com/course/curso-blender-3d-portugues/?src=sac&kw=curso+blen",
-            "progress": "15%"
+            "progress": "23%"
         },
         {
             "title": "CS50x - Introduction to Computer Science.",
@@ -110,7 +118,7 @@
         },
         {
             "title": "Engenharia de Controle e Automação",
-            "desc": "Mecatrônica e automação industrial, com conhecimentos em mecânica, elétrica e programação.",
+            "desc": "<p style='color: red; font-size: 1rem;'>Trancado</p>Mecatrônica e automação industrial, com conhecimentos em mecânica, elétrica e programação.",
             "img_path": "assets/images/thumbnails/courses/extra/eniac.png",
             "alt": "Eniac",
             "link": "https://www.eniac.com.br/cursos/engenharia-de-controle-e-automacao",

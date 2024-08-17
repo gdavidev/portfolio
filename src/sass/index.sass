@@ -19,13 +19,15 @@
             font-size: 7rem
             line-height: 6rem
             display: flex
-            flex-wrap: wrap
+            flex-wrap: nowrap
 
     #contact
         list-style-type: none
         display: flex
         flex-wrap: nowrap
         padding-left: 20px
+        position: relative
+        left: -300px
 
         li
             width: 50px
@@ -54,11 +56,13 @@
                 line-height: 4.5rem
 
         #contact
+            left: -220px
+
             li
-                width: 30px
+                width: 40px
 
                 img
-                    width: 30px
+                    width: 40px
 
 @media (max-width: 650px)
     #page_cover
@@ -69,12 +73,14 @@
                 font-size: 3.5rem
                 line-height: 3rem
 
-    #contact
-        li
-            width: 30px
+        #contact
+            left: -160px
 
-            img
+            li
                 width: 30px
+
+                img
+                    width: 30px
 
 @media (max-width: 470px)
     #page_cover
@@ -84,8 +90,3 @@
             #title
                 font-size: 3.5rem
                 line-height: 3rem
-
-    #contact
-        position: absolute
-        top: -42px
-        left: 10px

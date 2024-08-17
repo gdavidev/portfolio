@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('./../json/experience.json')
         .then((resp: Response): Promise<any> => resp.json())
         .then(async (data: any): Promise<void> => { 
+            loadExperiencias(data)
             loadExperienciasAdcio(data);
         });    
 });
@@ -24,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
 async function loadCursosMain(coursesDB: any) {
     let cursosMain = document.getElementById('cursos_main');
     if (cursosMain) {
-        const principal = coursesDB.principal;
-        for (let i = 0; i < principal.length; i++) {
-            const node = principal[i];
+        const main = coursesDB.main;
+        for (let i = 0; i < main.length; i++) {
+            const node = main[i];
             const card = new CardProgress(
                 node.title,
                 node.desc,
@@ -74,6 +75,24 @@ async function loadCursosOutro(coursesDB: any) {
                 node.progress
             );
             outrosCursos.innerHTML += card.getHtml();
+        };
+    }
+}
+
+function loadExperiencias(experienceDB: any) {
+    const exprMain = document.getElementById('expr_main');
+    if (exprMain) {
+            const main = experienceDB.main;
+            for (let i = 0; i < main.length; i++) {
+                const node = main[i];
+                const card = new RegCard(
+                    node.title,
+                    node.desc,
+                    "../" + node.img_path,
+                    node.alt,
+                    node.link,
+                );           
+            exprMain.innerHTML += card.getHtml();
         };
     }
 }

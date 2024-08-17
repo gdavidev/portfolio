@@ -22,12 +22,30 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(async (data: any): Promise<void> => { loadExperiencias(data); });
 });
 
+function loadExperiencias(experienceDB: any) {
+    const exprMain = document.getElementById('expr_main');
+    if (exprMain) {
+            const main = experienceDB.main;
+            for (let i = 0; i < main.length; i++) {
+                const node = main[i];
+                const card = new RegCard(
+                    node.title,
+                    node.desc,
+                    './dist/' + node.img_path,
+                    node.alt,
+                    node.link,
+                );           
+            exprMain.innerHTML += card.getHtml();
+        };
+    }
+}
+
 function loadCursos(coursesDB: any) {
     const cursosMain = document.getElementById('cursos_main');
     if (cursosMain) {
-            const principal = coursesDB.principal;
-            for (let i = 0; i < principal.length; i++) {
-                const node = principal[i];
+            const main = coursesDB.main;
+            for (let i = 0; i < main.length; i++) {
+                const node = main[i];
                 const card = new CardProgress(
                     node.title,
                     node.desc,
@@ -62,24 +80,6 @@ async function loadProjetos(projectsDB: any) {
                 node.state
             );            
             projMain.innerHTML += card.getHtml();
-        };  
-    }
-}
-
-function loadExperiencias(experienceDB: any) {
-    const experiencias = document.getElementById('experiencias');
-    if (experiencias) {
-        const other_exp = experienceDB.other;
-        for (let i = 0; i < other_exp.length; i++) {
-            const node = other_exp[i];
-            const card = new RegCard(
-                node.title,
-                node.desc,
-                './dist/' + node.img_path,
-                node.alt,
-                node.link,
-            );
-            experiencias.innerHTML += card.getHtml();
         };  
     }
 }
