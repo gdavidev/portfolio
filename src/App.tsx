@@ -1,33 +1,38 @@
-import { useState } from 'react'
-import './App.css'
+import {createBrowserRouter, Outlet, RouterProvider, useLocation} from "react-router-dom";
+import Home from "./pages/Home.tsx";
+import Footer from "./components/Footer.tsx";
+import Navbar from "./components/Navbar.tsx";
+import Contact from "./pages/Contact.tsx";
+import Formation from "./pages/Formation.tsx";
+import Projects from "./pages/Projects.tsx";
 
-function App() {
-  const [count, setCount] = useState(0)
+const browserRouter = createBrowserRouter([
+    {
+        path: '/',
+        element: <Layout/>,
+        children: [
+            {path: '/', element: <Home/>},
+            {path: '/contact', element: <Contact/>},
+            {path: '/formation', element: <Formation/>},
+            {path: '/projects', element: <Projects/>},
+        ]
+    },
+]);
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          {/*<img src={viteLogo} className="logo" alt="Vite logo" />*/}
-        </a>
-        <a href="https://react.dev" target="_blank">
-          {/*<img src={reactLogo} className="logo react" alt="React logo" />*/}
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+function Layout() {
+    const location = useLocation();
+
+    return (
+        <>
+            <Navbar allowTransitionEffect={ location.pathname === '/' } />
+            <main>
+                <Outlet/>
+            </main>
+            <Footer/>
+        </>
+    );
 }
 
-export default App
+export default function App() {
+    return <RouterProvider router={browserRouter}/>
+}
