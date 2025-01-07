@@ -1,4 +1,4 @@
-import Card from './Card.js';
+import Card from './Card.ts';
 
 export default class RegCard extends Card {
     constructor(title : string, desc : string, img_path : string, alt : string, link : string) {

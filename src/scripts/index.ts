@@ -1,9 +1,9 @@
-import Navbar from '../models/Components/Navbar.js';
-import CardProgress from '../models/Components/CardProgress.js';
-import RegCard from '../models/Components/RegCard.js';
-import BigCard from '../models/Components/BigCard.js';
-import TagContainer from '../models/Components/TagContainer.js';
-import Tag from '../models/Components/Tag.js';
+import Navbar from '../components/Navbar.js';
+import CardProgress from '../components/CardProgress.js';
+import RegCard from '../components/RegCard.js';
+import BigCard from '../components/BigCard.js';
+import TagContainer from '../components/TagContainer.js';
+import Tag from '../components/Tag.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     const navbar = new Navbar("#menu", "#menu_bt", "#menu_ul", true);

@@ -1,6 +1,6 @@
-import Navbar from '../models/Components/Navbar.js';
-import CardProgress from '../models/Components/CardProgress.js';
-import RegCard from '../models/Components/RegCard.js';
+import Navbar from '../components/Navbar.js';
+import CardProgress from '../components/CardProgress.js';
+import RegCard from '../components/RegCard.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     const navbar = new Navbar("#menu", "#menu_bt", "#menu_ul", false);

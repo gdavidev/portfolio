@@ -1,4 +1,4 @@
-import Card from './Card.js';
+import Card from './Card.ts';
 
 export default class CardProgress extends Card {
     progress : string;

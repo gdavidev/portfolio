@@ -1,5 +1,5 @@
-import TagContainer from './TagContainer.js';
-import Card from './Card.js';
+import TagContainer from './TagContainer.ts';
+import Card from './Card.ts';
 
 export default class BigCard extends Card {
     sub_title : string;
