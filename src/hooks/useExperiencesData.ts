@@ -12,7 +12,7 @@ type ExperiencesData = {
 }
 
 export default function useExperiencesData(): UseExperiencesDataResult {
-    const { data, isLoading } = useJsonResource<ExperiencesData>('./dist/json/experience.json');
+    const { data, isLoading } = useJsonResource<ExperiencesData>('EXPERIENCES', './src/data/experience.json');
 
     return {
         experiences: data,

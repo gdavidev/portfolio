@@ -12,7 +12,7 @@ type TagsData = {
 }
 
 export default function useTagsData(): UseTagsDataResult {
-    const { data, isLoading } = useJsonResource<TagsData>('./dist/json/tags.json');
+    const { data, isLoading } = useJsonResource<TagsData>('TAGS', './src/data/tags.json');
 
     return {
         tags: data,

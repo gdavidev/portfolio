@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar.tsx";
 import Contact from "./pages/Contact.tsx";
 import Formation from "./pages/Formation.tsx";
 import Projects from "./pages/Projects.tsx";
+import CacheProvider from "./context/CacheProvider.tsx";
 
 const browserRouter = createBrowserRouter([
     {
@@ -34,5 +35,9 @@ function Layout() {
 }
 
 export default function App() {
-    return <RouterProvider router={browserRouter}/>
+    return (
+        <CacheProvider>
+            <RouterProvider router={browserRouter}/>
+        </CacheProvider>
+    )
 }
