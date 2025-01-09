@@ -1,5 +1,6 @@
 @use '../_global' as *
-    
+@use "sass:color"
+
 .big_card 
     margin-bottom: 6px
     padding: 6px
@@ -12,7 +13,7 @@
     box-shadow: 3px 3px 7px #00000055
 
     &:hover
-        border-left: 10px solid lighten($mainHighlight-color, 10%)
+        border-left: 10px solid color.adjust($mainHighlight-color, $lightness: 10%)
 
     .card_thumbnail 
         overflow: hidden

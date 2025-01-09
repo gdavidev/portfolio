@@ -1,4 +1,5 @@
 @use '../_global' as *
+@use "sass:color"
 
 .card
     background-color: $backgroundLight-color
@@ -21,7 +22,7 @@
         color: $fontHighlight-color
 
     &:hover
-        border-left: 10px solid lighten($mainHighlight-color, 10%)
+        border-left: 10px solid color.adjust($mainHighlight-color, $lightness: 10%)
 
     .card_date
         font-size: 1rem
