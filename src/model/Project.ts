@@ -4,7 +4,7 @@ type Project = {
     desc: string;
     img_path: string;
     alt: string;
-    tags: string;
+    tags: string[];
     state: string;
     link: string;
 }
