@@ -6,6 +6,9 @@ import Contact from "./pages/Contact.tsx";
 import Formation from "./pages/Formation.tsx";
 import Projects from "./pages/Projects.tsx";
 import CacheProvider from "./context/CacheProvider.tsx";
+import FontAwesomeHelper from "./scripts/FontAwesomeHelper.ts";
+
+FontAwesomeHelper.initialize();
 
 const browserRouter = createBrowserRouter([
     {
