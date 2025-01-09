@@ -6,10 +6,15 @@
 
 /*----------------------- Small Card -----------------------*/
 
-.card_container
+.card_container, .card_column
     display: grid
-    grid-template-columns: 1fr 1fr
     column-gap: 0.5rem
+
+.card_column
+    grid-template-columns: 1fr
+
+.card_container
+    grid-template-columns: 1fr 1fr
 
 @media (max-width: 1450px)
     .card_container
