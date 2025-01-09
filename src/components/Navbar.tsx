@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import useDeviceWidth, {DeviceWidthBreakpoints} from "../hooks/Environment/useDeviceWidth.ts";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 type NavbarProps = {
     allowTransitionEffect: boolean;
@@ -48,7 +49,7 @@ function NavbarDrawer(props: { scrolled: boolean }) {
     return (
         <>
             <button className="not_selectable" onClick={() => setOpen(!open)}>
-                <i className="material-icons">menu</i>
+                <FontAwesomeIcon icon='bars' />
             </button>
             <ul className={
                 "not_selectable can_transition"
