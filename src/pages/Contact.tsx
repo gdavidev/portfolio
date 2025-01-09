@@ -1,3 +1,5 @@
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 export default function Contact() {
     return (
         <div id="page_content">
@@ -8,15 +10,15 @@ export default function Contact() {
             </p>
             <div id="contact_container">
                 <div className="contact">
-                    <img src="../assets/images/icons/instagram.png" alt=""/>
+                    <FontAwesomeIcon icon={[ "fab", "instagram" ]} />
                     <a href="https://www.instagram.com/gabriel.david.david/">@gabriel.david.david</a>
                 </div>
                 <div className="contact">
-                    <img src="../assets/images/icons/email.png" alt=""/>
+                    <FontAwesomeIcon icon={[ "far", "envelope"]} />
                     <a href="mailto:gdavid.wk2202@gmail.com">gdavid.wk2202@gmail.com</a>
                 </div>
                 <div className="contact">
-                    <img src="../assets/images/icons/whatsapp.png" alt=""/>
+                    <FontAwesomeIcon icon={[ "fab", "whatsapp" ]} />
                     <a href="https://wa.link/dg78tr">(11) 94693-8732</a>
                 </div>
             </div>
