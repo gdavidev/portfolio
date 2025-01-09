@@ -21,7 +21,11 @@ export default function CacheProvider(props: PropsWithChildren) {
     const [ cache, setCache ] = useState<CachedItem[]>([]);
 
     const getCachedItem = useCallback((id: string) => {
-        return cache.find(item => item.id === id);
+        const foundItem: CachedItem | undefined = cache.find(item => item.id === id);
+        if (foundItem) {
+            return foundItem.data;
+        }
+        return undefined;
     }, [cache]);
 
     const setCachedItem = useCallback((id: string, value: any) => {
