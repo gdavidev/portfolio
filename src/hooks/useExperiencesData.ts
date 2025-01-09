@@ -6,13 +6,13 @@ type UseExperiencesDataResult = {
     isExperiencesLoading: boolean;
 }
 
-type ExperiencesData = {
+export type ExperiencesData = {
     main: Experience[],
     other: Experience[]
 }
 
 export default function useExperiencesData(): UseExperiencesDataResult {
-    const { data, isLoading } = useJsonResource<ExperiencesData>('EXPERIENCES', './src/data/experience.json');
+    const { data, isLoading } = useJsonResource<ExperiencesData>('EXPERIENCES', '/src/data/experience.json');
 
     return {
         experiences: data,

@@ -2,21 +2,19 @@ import useJsonResource from "./useJsonResource.ts";
 import Project from "../model/Project.ts";
 
 type UseProjectsDataResult = {
-    courses: ProjectsData | null;
+    projects: ProjectsData | null;
     isProjectsLoading: boolean;
 }
 
 export type ProjectsData = {
-    courses: Project[],
-    main: Project[],
-    other: Project[]
+    projects: Project[],
 }
 
 export default function useProjectsData(): UseProjectsDataResult {
-    const { data, isLoading } = useJsonResource<ProjectsData>('PROJECTS', './src/data/projects.json');
+    const { data, isLoading } = useJsonResource<ProjectsData>('PROJECTS', '/src/data/projects.json');
 
     return {
-        courses: data,
+        projects: data,
         isProjectsLoading: isLoading
     }
 }
