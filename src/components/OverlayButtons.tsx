@@ -3,22 +3,14 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function OverlayButtons() {
     return (
-        <div style={{
-            position: 'fixed',
-            bottom: '1.5rem',
-            right: '1.5rem',
-            display: 'flex',
-            justifyContent: 'center',
-            flexDirection: 'column',
-            gap: '1rem',
-        }}>
+        <div className='fixed bottom-6 right-6 flex justify-center flex-col gap-4'>
             <OverlayButton
-                icon={<FontAwesomeIcon size="2x" icon={[ "fab", "instagram" ]} />}
-                backgroundColor='pink'
+                icon={<FontAwesomeIcon size="2x" icon={["fab", "instagram"]}/>}
+                className='text-white bg-instagram-gradient'
                 href="https://www.instagram.com/gabriel.david.david/"/>
             <OverlayButton
-                icon={<FontAwesomeIcon size="2x" icon={[ "fab", "whatsapp" ]} />}
-                backgroundColor='green'
+                icon={<FontAwesomeIcon size="2x" icon={["fab", "whatsapp"]}/>}
+                className='text-white bg-brand-whatsapp'
                 href="https://wa.link/dg78tr"/>
         </div>
     )
@@ -26,24 +18,15 @@ export default function OverlayButtons() {
 
 type OverlayButtonProps = {
     icon: ReactNode;
-    backgroundColor: string;
+    className: string;
     href: string;
 }
 
 function OverlayButton(props: OverlayButtonProps) {
+    const className: string = props.className + " shadow-lg w-14 h-14 items-center justify-center flex p-4 rounded-full";
+
     return (
-        <a
-            target='_blank'
-            href={props.href}
-            style={{
-                backgroundColor: props.backgroundColor,
-                padding: '1rem',
-                borderRadius: '50%',
-                color: 'white',
-                display: 'flex',
-                alignItems: 'center',
-            }}
-        >
+        <a target='_blank' href={props.href} className={className}>
             {props.icon}
         </a>
     )
