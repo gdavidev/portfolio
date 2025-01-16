@@ -31,10 +31,11 @@ body
     justify-content: space-evenly
     margin: 0
     padding: 0 20px
-    background-color: none
+    background-color: transparent
     height: fit-content
     color: $fontWhite-color
     transition: background-color 0.4s
+    min-height: 3.5rem
     #menu_bt
         display: none
         cursor: pointer
@@ -73,7 +74,7 @@ body
 
 #page_content
     color: $fontBlack-color
-    margin: 0px 5% 0px 5%
+    margin: 0 5% 0 5%
     text-align: initial
     font-size: 1.2rem
     font-family: 'Poppins', sans-serif
@@ -90,6 +91,7 @@ body
 /*----------------------- Footer -----------------------*/
 
 footer
+    width: 100%
     background-color: $footerBackground-color
     font-family: 'Poppins', sans-serif
     font-weight: 900
@@ -119,7 +121,7 @@ footer
             position: absolute
             right: 0
             height: 100vh
-            margin-top: 56px
+            margin-top: 3.5rem
             width: 40%
             background-color: $navbarBackground-color !important
             padding: 40px

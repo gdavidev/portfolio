@@ -10,7 +10,7 @@ export default function Formation() {
     const { experiences, isExperiencesLoading } = useExperiencesData();
 
     return (
-        <div id="page_content">
+        <div id="page_content" style={{marginTop: '4.5rem'}}>
             <h1>Formação acadêmica</h1>
             <p className="descricao_do_topico">Um levantamento de todos os cursos em que ja terminei, comecei ou tenho o
                 interesse em começar. <br/>

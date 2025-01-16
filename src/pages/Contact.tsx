@@ -2,7 +2,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Contact() {
     return (
-        <div id="page_content">
+        <div id="page_content" style={{marginTop: '4.5rem'}}>
             <h1>Contatos</h1>
             <p className="descricao_do_topico">
                 Não hesite em deixar uma mensagem nos canais abaixo, perguntas e mensagens de bom dia serão sempre

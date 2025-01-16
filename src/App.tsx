@@ -7,6 +7,7 @@ import Formation from "./pages/Formation.tsx";
 import Projects from "./pages/Projects.tsx";
 import CacheProvider from "./context/CacheProvider.tsx";
 import FontAwesomeHelper from "./scripts/FontAwesomeHelper.ts";
+import {useEffect, useState} from "react";
 
 FontAwesomeHelper.initialize();
 
@@ -24,11 +25,16 @@ const browserRouter = createBrowserRouter([
 ]);
 
 function Layout() {
+    const [ allowNavbarTransition, setAllowNavbarTransition ] = useState<boolean>(false)
     const location = useLocation();
+
+    useEffect(() => {
+        setAllowNavbarTransition(location.pathname !== '/')
+    }, [location.pathname]);
 
     return (
         <>
-            <Navbar allowTransitionEffect={ location.pathname === '/' } />
+            <Navbar allowTransitionEffect={ allowNavbarTransition } />
             <main>
                 <Outlet/>
             </main>

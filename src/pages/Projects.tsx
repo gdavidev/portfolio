@@ -5,7 +5,7 @@ export default function Projects() {
     const { projects, isProjectsLoading } = useProjectsData();
 
     return (
-        <div id="page_content">
+        <div id="page_content" style={{marginTop: '4.5rem'}}>
             <h1>Projetos e Trabalhos</h1>
             <p className="descricao_do_topico">Mostruário dos meus principais projetos comerciais e acadêmicos.
             </p>

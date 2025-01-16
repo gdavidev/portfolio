@@ -8,33 +8,31 @@ type NavbarProps = {
 }
 
 export default function Navbar(props: NavbarProps) {
-    const { breakpoint } = useDeviceWidth();
-    const [ scrolled, setScrolled ] = useState<boolean>(false);
+    const {breakpoint} = useDeviceWidth();
+    const [scrolled, setScrolled] = useState<boolean>(false);
 
     useEffect(() => {
-        if (!props.allowTransitionEffect)
-            return;
-
-        const aboveScrollThreshold = window.scrollY > 100;
-        if (aboveScrollThreshold !== scrolled)
-            setScrolled(aboveScrollThreshold)
-    }, [window.scrollY]);
+        if (props.allowTransitionEffect)
+            window.addEventListener('scroll', () => {
+                setScrolled(window.scrollY > 100);
+            });
+    }, [props.allowTransitionEffect]);
 
     return (
-        <nav id="menu">
+        <nav id="menu" className={scrolled || props.allowTransitionEffect ? " header_scrolled" : ""}>
             <p className="not_selectable">Gabriel David</p>
             {
                 breakpoint >= DeviceWidthBreakpoints.XL ?
-                    <NavbarInline scrolled={ scrolled } /> :
-                    <NavbarDrawer scrolled={ scrolled } />
+                    <NavbarInline/> :
+                    <NavbarDrawer/>
             }
         </nav>
     );
 }
 
-function NavbarInline(props: { scrolled: boolean }) {
+function NavbarInline() {
     return (
-        <ul className={"not_selectable can_transition" + (props.scrolled ? " header_scrolled" : "")}>
+        <ul id='menu_ul' className={"not_selectable can_transition"}>
             <li><Link to="/"> Home</Link></li>
             <li><Link to="/formation"> Formação</Link></li>
             <li><Link to="/projects"> Projetos</Link></li>
@@ -43,19 +41,15 @@ function NavbarInline(props: { scrolled: boolean }) {
     )
 }
 
-function NavbarDrawer(props: { scrolled: boolean }) {
-    const [ open, setOpen ] = useState<boolean>(false);
+function NavbarDrawer() {
+    const [open, setOpen] = useState<boolean>(false);
 
     return (
         <>
-            <button className="not_selectable" onClick={() => setOpen(!open)}>
-                <FontAwesomeIcon icon='bars' />
+            <button id='menu_bt' className="not_selectable" onClick={() => setOpen(!open)}>
+                <FontAwesomeIcon icon='bars'/>
             </button>
-            <ul className={
-                "not_selectable can_transition"
-                    + (open ? " active" : "")
-                    + (props.scrolled ? " header_scrolled" : "")
-            }>
+            <ul id='menu_ul' className={"not_selectable can_transition" + (open ? " active" : "")}>
                 <li><Link to="/"> Home</Link></li>
                 <li><Link to="/formation"> Formação</Link></li>
                 <li><Link to="/projects"> Projetos</Link></li>
