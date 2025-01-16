@@ -1,26 +1,14 @@
 import githubIcon from '@/assets/images/icons/github-white.png'
 import linkedinIcon from '@/assets/images/icons/linkedin-white.png'
-import instagramIcon from '@/assets/images/icons/instagram-white.png'
-import useCoursesData from "../hooks/useCoursesData.ts";
-import useExperiencesData from "../hooks/useExperiencesData.ts";
-import ExperienceCard from "../components/Cards/ExperienceCard.tsx";
-import CourseCard from "../components/Cards/CourseCard.tsx";
-import useProjectsData from "../hooks/useProjectsData.ts";
-import ProjectCard from "../components/Cards/ProjectCard.tsx";
-import Experience from "../model/Experience.ts";
-import Course from "../model/Course.ts";
+import CopyTextContainer from "../components/CopyTextContainer.tsx";
 import ExperienceCardsContainer from "../components/Cards/Containers/ExperienceCardsContainer.tsx";
 import CourseCardsContainer from "../components/Cards/Containers/CourseCardsContainer.tsx";
 import ProjectsCardsContainer from "../components/Cards/Containers/ProjectsCardsContainer.tsx";
 
 export default function Home() {
-    const {projects, isProjectsLoading} = useProjectsData();
-    const {courses, isCoursesLoading} = useCoursesData();
-    const {experiences, isExperiencesLoading} = useExperiencesData();
-
     return (
         <>
-            <HeroBanner />
+            <HeroBanner/>
 
             <div id="page_content">
                 <h2>Descrição</h2>
@@ -73,13 +61,9 @@ function HeroBanner() {
                                 <img src={linkedinIcon} alt="Linkedin"/>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://www.instagram.com/gabriel.david.david/">
-                                <img src={instagramIcon} alt="Instagram"/>
-                            </a>
-                        </li>
                     </ul>
                 </h1>
+                <CopyTextContainer text='gdavid.wk2202@gmail.com'/>
             </div>
 
             <div id="transition"></div>
