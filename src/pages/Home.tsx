@@ -33,7 +33,7 @@ export default function Home() {
                     Estou sempre disposto a descobrir novas áreas de atuação relacionadas a programação.
                 </p>
 
-                <h2>Experiência Proficional</h2>
+                <h2>Experiência Profissional</h2>
                 <p className="descricao_do_topico">Minhas maiores experiencias como programador</p>
                 <div className='card_column' id="expr_main">
                     { !isExperiencesLoading &&
