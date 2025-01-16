@@ -9,6 +9,9 @@ import useProjectsData from "../hooks/useProjectsData.ts";
 import ProjectCard from "../components/Cards/ProjectCard.tsx";
 import Experience from "../model/Experience.ts";
 import Course from "../model/Course.ts";
+import ExperienceCardsContainer from "../components/Cards/Containers/ExperienceCardsContainer.tsx";
+import CourseCardsContainer from "../components/Cards/Containers/CourseCardsContainer.tsx";
+import ProjectsCardsContainer from "../components/Cards/Containers/ProjectsCardsContainer.tsx";
 
 export default function Home() {
     const {projects, isProjectsLoading} = useProjectsData();
@@ -33,39 +36,20 @@ export default function Home() {
                     Estou sempre disposto a descobrir novas áreas de atuação relacionadas a programação.
                 </p>
 
-                <h2>Experiência Profissional</h2>
-                <p className="descricao_do_topico">Minhas maiores experiencias como programador</p>
-                <div className='card_column' id="expr_main">
-                    { !isExperiencesLoading &&
-                        experiences!.main.map(
-                            (experience: Experience, i: number) => (
-                                <ExperienceCard key={i} experience={experience} />
-                            )
-                        )
-                    }
-                </div>
+                <ExperienceCardsContainer
+                    title='Experiência Profissional'
+                    description='Minhas maiores experiencias como programador'
+                    experiencesCategory='main'/>
 
-                <h2 id="expr">Principais Cursos</h2>
-                <p className="descricao_do_topico">Cursos recentes mais relevantes.</p>
-                <div className='card_container' id="cursos_main">
-                    { !isCoursesLoading &&
-                        courses!.main.map(
-                            (course: Course, i: number) => (
-                                <CourseCard key={i} course={course} />
-                            )
-                        )
-                    }
-                </div>
+                <CourseCardsContainer
+                    title='Principais Cursos'
+                    description='Cursos recentes mais relevantes.'
+                    coursesCategory='main'/>
 
-                <h2 id="proj">Projetos recentes</h2>
-                <p className="descricao_do_topico">Projetos pessoais ou comerciais em que trabalho atualmente.</p>
-                <div className="big_card_container" id="proj_main">
-                    { !isProjectsLoading &&
-                        projects!.projects.map((project, index: number) => (
-                            <ProjectCard key={ index } project={ project } />
-                        ))
-                    }
-                </div>
+                <ProjectsCardsContainer
+                    title='Projetos recentes'
+                    description='Projetos pessoais ou comerciais em que trabalho atualmente.'
+                    projectsCategory='projects'/>
             </div>
         </>
     );
