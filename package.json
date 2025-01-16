@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "compile:sass": "sass src/sass/:src/css/",
-    "dev": "concurrently \"npm run compile:sass -- --watch\" \"vite\"",
-    "build": "sass src/sass/ dist/css/ && tsc -b && vite build",
+    "watch:sass": "sass --watch src/sass/:src/css/",
+    "dev": "concurrently \"npm run watch:sass\" \"vite\"",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
