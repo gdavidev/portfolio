@@ -11,13 +11,17 @@ import {
     faSquareJs,
     faPhp,
     faSass,
-    faWhatsapp
+    faWhatsapp,
+    faAws,
+    faNodeJs
 } from '@fortawesome/free-brands-svg-icons'
 import {
     faBars,
     faDatabase,
     faFile,
     faC,
+    faWind,
+    faCircle,
     faSquare
 } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -40,9 +44,13 @@ export default class FontAwesomeHelper {
             faSquare,
             faSass,
             faWhatsapp,
+            faAws,
+            faNodeJs,
             faBars,
             faC,
             faFile,
+            faWind,
+            faCircle,
             faDatabase,
             faEnvelope
         );

@@ -19,12 +19,48 @@
             }
         },
         {
+            "name": "Tailwind",
+            "text_color": "white",
+            "bg_color": "rgb(48, 170, 221)",
+            "icon": {
+                "collection": "fa",
+                "name": "wind"
+            }
+        },
+        {
             "name": "JavaScript",
             "text_color": "white",
             "bg_color": "rgb(228, 162, 40)",
             "icon": {
                 "collection": "fab",
                 "name": "square-js"
+            }
+        },
+        {
+            "name": "Node",
+            "text_color": "white",
+            "bg_color": "rgb(50, 150, 20)",
+            "icon": {
+                "collection": "fab",
+                "name": "node-js"
+            }
+        },
+        {
+            "name": "AWS",
+            "text_color": "white",
+            "bg_color": "rgb(217 161 4)",
+            "icon": {
+                "collection": "fab",
+                "name": "aws"
+            }
+        },
+        {
+            "name": ".NET",
+            "text_color": "white",
+            "bg_color": "rgb(102, 112, 233)",
+            "icon": {
+                "collection": "fas",
+                "name": "square"
             }
         },
         {
@@ -106,6 +142,15 @@
             "icon": {
                 "collection": "fas",
                 "name": "square"
+            }
+        },
+        {
+            "name": "Delphi",
+            "text_color": "white",
+            "bg_color": "rgb(170, 30, 30)",
+            "icon": {
+                "collection": "fa",
+                "name": "circle"
             }
         },
         {
