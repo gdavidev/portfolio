@@ -3,6 +3,23 @@
 @tailwind utilities;
 
 @layer components {
+    .page-content {
+        @apply px-28 bg-page-background
+    }
+    .page-content h1,
+    .page-content h2,
+    .page-content h3 {
+        @apply font-rubik font-bold text-primary text-2xl;
+    }
+
+    .navbar {
+        @apply text-white select-none h-12 items-center flex justify-between px-16 fixed top-0 w-screen
+            transition-[background-color] duration-200 z-10;
+    }
+    .navbar a {
+        @apply flex items-center px-8 h-full hover:bg-primary-red;
+    }
+
     .bg-instagram-gradient {
         background: #d6249f;
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
@@ -21,13 +38,32 @@
     .card .card-title {
         @apply font-rubik font-bold text-primary text-2xl
     }
+
+    .github-mask {
+        mask-repeat: no-repeat;
+        mask-size: 100%;
+        background: red;
+        mask-image: url(@/assets/images/icons/github-white.png);
+    }
 }
 
 @layer base {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     html {
         font-weight: normal;
         font-family: 'Poppins', sans-serif;
         box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow-x: hidden;
     }
 
     /*------- POPPINS -------*/
@@ -112,5 +148,11 @@
         font-weight: 700;
         font-style: normal;
         src: url(@/assets/fonts/DancingScript/DancingScript-Bold.ttf);
+    }
+
+    /*------- ROBOTO -------*/
+    @font-face {
+        font-family: "Roboto";
+        src: url(@/assets/fonts/Roboto-VariableFont_wdth,wght.ttf);
     }
 }
