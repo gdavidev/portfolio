@@ -16,21 +16,25 @@ export default function ProjectCard(props: ProjectCardProps): ReactElement {
     const project = props.project;
 
     return (
-        <div className="big_card">
-            <div className="card_thumbnail">
+        <div className="card project-card">
+            <div className="">
                 <a href={ project.link }><img src={ project.img_path } alt={ project.alt }/></a>
             </div>
-            <div className="card_info">
-                <div className='card_info'>
-                    <h3 className="card_title">{ project.title }</h3>
-                    <h4 className="card_sub_title">{ project.sub_title }</h4>
+            <div className="">
+                <div className=''>
+                    <div className='flex flex-col lg:flex-row lg:gap-x-2 lg:items-baseline'>
+                        <h3 className="card-title">{ project.title }</h3>
+                        <h4 className="text-primary font-rubik text-md">{ project.sub_title }</h4>
+                    </div>
                     <TagContainer source={project.tags} />
-                    <p className="card_desc">{ project.desc }</p>
-                    <p className="project_state">
+                    <p className="">{ project.desc }</p>
+                    <p className="">
                         State: <span style={{ color: getStateColor( project.state ), fontWeight: 'bold' }}>{ project.state }</span>
                     </p>
                 </div>
-                <a href={ project.link } className="access_link">{ project.link }</a>
+                { project.link &&
+                    <a href={ project.link } className="access_link">{ project.link }</a>
+                }
             </div>
         </div>
     );

@@ -7,6 +7,20 @@
         background: #d6249f;
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     }
+
+    .card {
+        @apply bg-card-background duration-200 py-1 px-2 shadow-md
+            border-s-[0.4rem] hover:border-s-[0.8rem]
+            border-primary hover:border-primary-light
+    }
+
+    .project-card {
+        @apply grid grid-cols-2 gap-x-2
+    }
+
+    .card .card-title {
+        @apply font-rubik font-bold text-primary text-2xl
+    }
 }
 
 @layer base {

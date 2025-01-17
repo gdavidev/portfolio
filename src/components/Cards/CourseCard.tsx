@@ -1,4 +1,5 @@
 import Course from "../../model/Course.ts";
+import ProgressBar from "../ProgressBar.tsx";
 
 type CardProgressProps = {
     course: Course;
@@ -9,19 +10,16 @@ export default function CourseCard(props: CardProgressProps) {
 
     return (
         <div className='card'>
-            <a href={ course.link } target='_blank'>
-                <img src={ course.img_path } alt={ course.alt } />
-            </a>
-            <div className='card_info'>
-                <h3 className='card_title'>{ course.title }</h3>
-                <p dangerouslySetInnerHTML={{ __html: course.desc }} />
-            </div>
-            <div className='card_progress_bar'>
-                <p className='card_progress_bar_percentage'>{ course.progress }</p>
-                <div className='card_progress_bar_border'>
-                    <div className='card_progress_bar_fill' style={{ width: course.progress }}></div>
+            <div className='grid grid-cols-[250px_1fr] gap-x-2'>
+                <a href={course.link} target='_blank'>
+                    <img className='object-cover' src={course.img_path} alt={course.alt}/>
+                </a>
+                <div>
+                    <h3 className='card-title'>{course.title}</h3>
+                    <p>{course.desc}</p>
                 </div>
             </div>
+            <ProgressBar currentPercentage={course.progress}/>
         </div>
     );
 }

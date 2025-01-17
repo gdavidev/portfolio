@@ -14,7 +14,7 @@ export default function ProjectsCardsContainer(props: ProjectsCardsContainerProp
         <CardsContainerBase
             title={props.title}
             description={props.description}
-            containerClassName='big_card_container'
+            containerClassName='grid grid-cols-1'
         >
             {!isProjectsLoading &&
                 projects![props.projectsCategory].map((project: Project, index: number) => (

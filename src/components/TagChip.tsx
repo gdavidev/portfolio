@@ -10,15 +10,11 @@ export default function TagChip(props: TagProps) {
     const tag: Tag = props.tag;
 
     return (
-        <div className="tag" style={{
-            color: tag.text_color,
-            backgroundColor: tag.bg_color,
-            display: "inline-flex",
-            alignItems: 'center',
-            gap: 4,
-        }}>
-            <FontAwesomeIcon icon={[ tag.icon.collection as IconPrefix, tag.icon.name as IconName ]} />
-            <p>{ tag.name }</p>
+        <div
+            className="inline-flex items-center gap-x-2 py-0.5 px-4 rounded-full"
+            style={{ color: tag.text_color, backgroundColor: tag.bg_color }}>
+                <FontAwesomeIcon icon={[ tag.icon.collection as IconPrefix, tag.icon.name as IconName ]} />
+                <p>{ tag.name }</p>
         </div>
     );
 }
