@@ -1,14 +1,13 @@
 {
     "projects": [
         {
-            "title": "Código Instalações",
-            "sub_title": "Site Institucional",
+            "title": "EmuHub",
+            "sub_title": "Trabalho de Conclusão de Curso",
             "desc": "Site criado com o objetivo de exibir os serviços de eletricista e assemelhados, a pagina no momento contém apresentações da empresa e de todos os serviços oferecidos e uma pagina de contato. A pagina tem cunho comercial e tem o objetivo de ser usada pela empresa.",
             "img_path": "/src/assets/images/thumbnails/projects/CodigoInstalacoesHome.png",
-            "alt": "Código Instalações",
-            "tags": ["HTML", "CSS", "JavaScript", "GitHub Pages"],
-            "state": "In Progress",
-            "link": "https://gdavidev.github.io/Codigo_Instalacoes/"
+            "alt": "EmuHub",
+            "tags": ["React", "Typescript", "Tailwind", "Node", "AWS", ".NET", "Delphi"],
+            "state": "In Progress"
         },
         {
             "title": "Este Portfólio",
@@ -18,7 +17,7 @@
             "alt": "Portfolio",
             "tags": ["React", "Typescript", "SASS", "GitHub Pages"],
             "state": "Stable",
-            "link": "https://gdavidev.github.io/Portfolio/"
+            "link": "https://gdavidev.github.io/portfolio/"
         }
     ]
 }

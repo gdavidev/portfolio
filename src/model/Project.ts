@@ -6,6 +6,6 @@ type Project = {
     alt: string;
     tags: string[];
     state: string;
-    link: string;
+    link?: string;
 }
 export default Project;
