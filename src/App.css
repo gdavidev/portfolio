@@ -8,3 +8,95 @@
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     }
 }
+
+@layer base {
+    html {
+        font-weight: normal;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    /*------- POPPINS -------*/
+    @font-face {
+        font-family: "Poppins";
+        font-weight: 900;
+        font-style: normal;
+        src: url(@/assets/fonts/Poppins/Poppins-Black.ttf);
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-weight: bold;
+        font-style: normal;
+        src: url(@/assets/fonts/Poppins/Poppins-Bold.ttf);
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-weight: bold;
+        font-style: italic;
+        src: url(@/assets/fonts/Poppins/Poppins-BoldItalic.ttf);
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-weight: normal;
+        font-style: italic;
+        src: url(@/assets/fonts/Poppins/Poppins-Italic.ttf);
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-weight: normal;
+        font-style: normal;
+        src: url(@/assets/fonts/Poppins/Poppins-Regular.ttf);
+    }
+
+    /*------- RUBIK -------*/
+    @font-face {
+        font-family: "Rubik";
+        font-weight: 900;
+        font-style: normal;
+        src: url(@/assets/fonts/Rubik/Rubik-Black.ttf);
+    }
+    @font-face {
+        font-family: "Rubik";
+        font-weight: bold;
+        font-style: normal;
+        src: url(@/assets/fonts/Rubik/Rubik-Bold.ttf);
+    }
+    @font-face {
+        font-family: "Rubik";
+        font-weight: normal;
+        font-style: normal;
+        src: url(@/assets/fonts/Rubik/Rubik-Medium.ttf);
+    }
+    @font-face {
+        font-family: "Rubik";
+        font-weight: normal;
+        font-style: italic;
+        src: url(@/assets/fonts/Rubik/Rubik-MediumItalic.ttf);
+    }
+
+    /*------- DANCING SCRIPT -------*/
+    @font-face {
+        font-family: "DancingScript";
+        font-weight: 400;
+        font-style: normal;
+        src: url(@/assets/fonts/DancingScript/DancingScript-Regular.ttf);
+    }
+    @font-face {
+        font-family: "DancingScript";
+        font-weight: 500;
+        font-style: normal;
+        src: url(@/assets/fonts/DancingScript/DancingScript-Medium.ttf);
+    }
+    @font-face {
+        font-family: "DancingScript";
+        font-weight: 600;
+        font-style: normal;
+        src: url(@/assets/fonts/DancingScript/DancingScript-SemiBold.ttf);
+    }
+    @font-face {
+        font-family: "DancingScript";
+        font-weight: 700;
+        font-style: normal;
+        src: url(@/assets/fonts/DancingScript/DancingScript-Bold.ttf);
+    }
+}
