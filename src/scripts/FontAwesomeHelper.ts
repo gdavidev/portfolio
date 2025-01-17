@@ -22,11 +22,10 @@ import {
     faC,
     faWind,
     faCircle,
+    faEnvelope,
+    faArrowUp,
     faSquare
 } from '@fortawesome/free-solid-svg-icons'
-import {
-    faEnvelope
-} from '@fortawesome/free-regular-svg-icons'
 
 export default class FontAwesomeHelper {
     public static initialize() {
@@ -52,6 +51,7 @@ export default class FontAwesomeHelper {
             faWind,
             faCircle,
             faDatabase,
+            faArrowUp,
             faEnvelope
         );
     }
