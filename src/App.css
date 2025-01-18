@@ -71,31 +71,31 @@
         font-family: "Poppins";
         font-weight: 900;
         font-style: normal;
-        src: url(@/assets/fonts/Poppins/Poppins-Black.ttf);
+        src: url('/assets/fonts/Poppins/Poppins-Black.ttf');
     }
     @font-face {
         font-family: "Poppins";
         font-weight: bold;
         font-style: normal;
-        src: url(@/assets/fonts/Poppins/Poppins-Bold.ttf);
+        src: url('/assets/fonts/Poppins/Poppins-Bold.ttf');
     }
     @font-face {
         font-family: "Poppins";
         font-weight: bold;
         font-style: italic;
-        src: url(@/assets/fonts/Poppins/Poppins-BoldItalic.ttf);
+        src: url('/assets/fonts/Poppins/Poppins-BoldItalic.ttf');
     }
     @font-face {
         font-family: "Poppins";
         font-weight: normal;
         font-style: italic;
-        src: url(@/assets/fonts/Poppins/Poppins-Italic.ttf);
+        src: url('/assets/fonts/Poppins/Poppins-Italic.ttf');
     }
     @font-face {
         font-family: "Poppins";
         font-weight: normal;
         font-style: normal;
-        src: url(@/assets/fonts/Poppins/Poppins-Regular.ttf);
+        src: url('/assets/fonts/Poppins/Poppins-Regular.ttf');
     }
 
     /*------- RUBIK -------*/
@@ -103,25 +103,25 @@
         font-family: "Rubik";
         font-weight: 900;
         font-style: normal;
-        src: url(@/assets/fonts/Rubik/Rubik-Black.ttf);
+        src: url('/assets/fonts/Rubik/Rubik-Black.ttf');
     }
     @font-face {
         font-family: "Rubik";
         font-weight: bold;
         font-style: normal;
-        src: url(@/assets/fonts/Rubik/Rubik-Bold.ttf);
+        src: url('/assets/fonts/Rubik/Rubik-Bold.ttf');
     }
     @font-face {
         font-family: "Rubik";
         font-weight: normal;
         font-style: normal;
-        src: url(@/assets/fonts/Rubik/Rubik-Medium.ttf);
+        src: url('/assets/fonts/Rubik/Rubik-Medium.ttf');
     }
     @font-face {
         font-family: "Rubik";
         font-weight: normal;
         font-style: italic;
-        src: url(@/assets/fonts/Rubik/Rubik-MediumItalic.ttf);
+        src: url('/assets/fonts/Rubik/Rubik-MediumItalic.ttf');
     }
 
     /*------- DANCING SCRIPT -------*/
@@ -129,30 +129,30 @@
         font-family: "DancingScript";
         font-weight: 400;
         font-style: normal;
-        src: url(@/assets/fonts/DancingScript/DancingScript-Regular.ttf);
+        src: url('/assets/fonts/DancingScript/DancingScript-Regular.ttf');
     }
     @font-face {
         font-family: "DancingScript";
         font-weight: 500;
         font-style: normal;
-        src: url(@/assets/fonts/DancingScript/DancingScript-Medium.ttf);
+        src: url('/assets/fonts/DancingScript/DancingScript-Medium.ttf');
     }
     @font-face {
         font-family: "DancingScript";
         font-weight: 600;
         font-style: normal;
-        src: url(@/assets/fonts/DancingScript/DancingScript-SemiBold.ttf);
+        src: url('/assets/fonts/DancingScript/DancingScript-SemiBold.ttf');
     }
     @font-face {
         font-family: "DancingScript";
         font-weight: 700;
         font-style: normal;
-        src: url(@/assets/fonts/DancingScript/DancingScript-Bold.ttf);
+        src: url('/assets/fonts/DancingScript/DancingScript-Bold.ttf');
     }
 
     /*------- ROBOTO -------*/
     @font-face {
         font-family: "Roboto";
-        src: url(@/assets/fonts/Roboto-VariableFont_wdth,wght.ttf);
+        src: url('/assets/fonts/Roboto-VariableFont_wdth,wght.ttf');
     }
 }

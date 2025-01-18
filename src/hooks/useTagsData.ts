@@ -16,7 +16,7 @@ export type TagsData = {
 }
 
 export default function useTagsData(options?: UseTagsDataOptions): UseTagsDataResult {
-    const { data, isLoading } = useJsonResource<TagsData>('TAGS', '/src/data/tags.json', {
+    const { data, isLoading } = useJsonResource<TagsData>('TAGS', '/data/tags.json', {
         onSuccess: options?.onSuccess
     });
 

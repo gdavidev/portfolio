@@ -13,7 +13,7 @@ export type CoursesData = {
 }
 
 export default function useCoursesData(): UseCoursesDataResult {
-    const { data, isLoading } = useJsonResource<CoursesData>('COURSES', '/src/data/courses.json');
+    const { data, isLoading } = useJsonResource<CoursesData>('COURSES', '/data/courses.json');
 
     return {
         courses: data,

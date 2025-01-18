@@ -40,7 +40,7 @@ export default {
         'smooth-pan-reverse': 'smooth-pan-reverse 200ms ease-in-out',
       },
       backgroundImage: {
-        'home-page-hero': "url('./src/assets/images/page-cover.png')",
+        'home-page-hero': "url('/assets/images/page-cover.png')",
       },
       fontFamily: {
         'rubik': ['Rubik', 'arial'],
