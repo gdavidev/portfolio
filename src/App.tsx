@@ -23,16 +23,11 @@ const browserRouter = createBrowserRouter([
 ]);
 
 function Layout() {
-    const [ allowNavbarTransition, setAllowNavbarTransition ] = useState<boolean>(false)
-    const location = useLocation();
-
-    useEffect(() => {
-        setAllowNavbarTransition(location.pathname !== '/')
-    }, [location.pathname]);
+    const {pathname} = useLocation()
 
     return (
         <>
-            <Navbar allowTransitionEffect={ allowNavbarTransition } />
+            <Navbar keepOpaque={pathname !== '/'} />
             <main>
                 <Outlet/>
             </main>
