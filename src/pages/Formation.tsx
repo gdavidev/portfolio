@@ -3,7 +3,7 @@ import CourseCardsContainer from "../components/Cards/Containers/CourseCardsCont
 
 export default function Formation() {
     return (
-        <div id="page_content" style={{marginTop: '4.5rem'}}>
+        <div className="page-content" style={{paddingTop: '4.5rem'}}>
             <h1>Formação acadêmica</h1>
             <p className="descricao_do_topico">Um levantamento de todos os cursos em que ja terminei, comecei ou tenho o
                 interesse em começar. <br/>

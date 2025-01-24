@@ -9,17 +9,16 @@ export default function Home() {
         <>
             <HeroBanner/>
 
-            <div id="page_content">
+            <div className='page-content pt-12'>
                 <h2>Descrição</h2>
                 <p className="descricao_do_topico">
                     Comecei minha carreira como programador aos 20 anos. Através do
                     Senai e amigos, conheci a programação por volta dos 18 anos, me apaixonei pela area, principalmente
-                    em <span className="highlight">Game Design</span> e
-                    <span className="highlight">Web Design</span>.
-                    Iniciei meus estudos no IFSP Câmpus Guarulhos em
-                    <span className="highlight">Tecnólogo em Análise e Desenvolvimento de Sistemas</span> e me encontro
-                    atualmente nos últimos dias do segundo semestre de curso e procurando uma vaga para
-                    <span className="highlight">programador estagiário</span>.
+                    em <span className="highlight">Game Design</span> e <span className="highlight">Web Design</span>.
+                    Iniciei meus estudos no IFSP Câmpus Guarulhos em <span className="highlight">Tecnólogo em Análise
+                    e Desenvolvimento de Sistemas</span> e me encontro
+                    atualmente nos últimos dias do segundo semestre de curso e procurando uma vaga
+                    para <span className="highlight">programador estagiário</span>.
                     Estou sempre disposto a descobrir novas áreas de atuação relacionadas a programação.
                 </p>
 
