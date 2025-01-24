@@ -27,6 +27,8 @@ import {
     faSquare
 } from '@fortawesome/free-solid-svg-icons'
 
+
+ // Static class with FontAwesome utility functions
 export default class FontAwesomeHelper {
     public static initialize() {
         library.add(
