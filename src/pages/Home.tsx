@@ -43,28 +43,53 @@ export default function Home() {
 
 function HeroBanner() {
     return (
-        <div id="page_cover">
-            <div id="cover_text">
-                <h1 id="title">
-                    Web <br/>
-                    Developer
-                    <ul id="contact">
-                        <li>
-                            <a href="https://github.com/gdavidev">
-                                <img src={githubIcon} alt="Github"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/gdavidev/">
-                                <img src={linkedinIcon} alt="Linkedin"/>
-                            </a>
-                        </li>
-                    </ul>
+        <>
+            <div className={
+                'select-none min-h-[102vh] bg-home-page-hero bg-cover w-full flex flex-col justify-end ps-12 pe-28 pb-36 '
+                + '2xl:pb-20 2xl:ps-28 md:ps-20'
+            }>
+                <div className={
+                    'flex gap-x-2 relative top-[2.75rem] left-[16rem] '
+                    + 'md:top-[4.5rem] md:left-[22rem] xl:top-[6rem] xl:left-[36rem]'
+                }>
+                    <ContactButton
+                        icon={githubIcon}
+                        alt='Github'
+                        link='https://github.com/gdavidev'
+                        highlightColor='bg-black'/>
+                    <ContactButton
+                        icon={linkedinIcon}
+                        alt='Linkedin'
+                        link='https://www.linkedin.com/in/gdavidev/'
+                        highlightColor='bg-sky-600'/>
+                </div>
+                <h1 className={
+                    'font-roboto font-black text-white text-[3.75rem] leading-[2.75rem] '
+                    + 'md:text-[5rem] md:leading-[4.25rem] xl:text-[8rem] xl:leading-[7rem]'
+                }>
+                    FullStack<br/>Web Developer
                 </h1>
-                <CopyTextContainer text='gdavid.wk2202@gmail.com'/>
             </div>
-
             <div id="transition"></div>
-        </div>
+        </>
     );
+}
+
+function ContactButton(props: { icon: string, alt: string, link: string, highlightColor: string }) {
+    return (
+        <a
+            className='group w-16 h-16 duration-100'
+            href={props.link}
+            style={{
+                maskRepeat: 'no-repeat',
+                maskSize: '100%',
+                maskImage: `url(${props.icon})`,
+            }}>
+            <div className='bg-white w-16 h-16'/>
+            <div
+                className={
+                    props.highlightColor + ' rounded-full relative -top-20 -left-3 scale-0 '
+                    + 'group-hover:scale-100 duration-200 w-24 h-24'}/>
+        </a>
+    )
 }
