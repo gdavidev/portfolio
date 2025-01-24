@@ -4,13 +4,14 @@ import {ReactNode} from "react";
 
 type TagContainerProps = {
     source: string[]
+    className?: string
 }
 
 export default function TagContainer(props: TagContainerProps) {
     const {tags} = useTagsData();
 
     return (
-        <div className='flex flex-wrap gap-x-1 gap-y-0.5'>
+        <div className={'flex flex-wrap gap-x-1 gap-y-0.5 ' + (props.className ?? '')}>
             {tags !== null && renderTags(props.source, tags) }
         </div>
     );

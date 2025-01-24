@@ -32,19 +32,8 @@
             border-primary hover:border-primary-light
     }
 
-    .project-card {
-        @apply grid grid-cols-2 gap-x-2
-    }
-
     .card .card-title {
-        @apply font-rubik font-bold text-primary text-2xl
-    }
-
-    .github-mask {
-        mask-repeat: no-repeat;
-        mask-size: 100%;
-        background: red;
-        mask-image: url(@/assets/images/icons/github-white.png);
+        @apply font-rubik font-bold text-primary text-2xl mb-2
     }
 }
 
