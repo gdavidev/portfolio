@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .page-content {
+        @apply px-6 md:px-16 xl:px-28 bg-page-background
+    }
+    .page-content > h1,
+    .page-content > h2,
+    .page-content > h3 {
+        @apply font-rubik font-bold text-primary text-2xl inline-block border-b-[1px] border-slate-300 w-full
+            mb-4 leading-[1.5rem];
+    }
+    .page-content > h1 {
+        @apply text-4xl;
+    }
+
+    .navbar {
+        @apply text-white select-none h-12 items-center flex justify-between px-16 fixed top-0 w-screen
+            transition-[background-color] duration-200 z-10;
+    }
+
+    .bg-instagram-gradient {
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+
+    .card {
+        @apply bg-card-background duration-200 py-1 px-2 shadow-md
+            border-s-[0.4rem] hover:border-s-[0.8rem]
+            border-primary hover:border-primary-light
+    }
+
+    .card .card-title {
+        @apply font-rubik font-bold text-primary text-2xl mb-2
+    }
+}
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-weight: normal;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    /*------- POPPINS -------*/
+    @font-face {
+        font-family: "Poppins";
+        font-weight: 900;
+        font-style: normal;
+        src: url('/assets/fonts/Poppins/Poppins-Black.ttf');
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-weight: bold;
+        font-style: normal;
+        src: url('/assets/fonts/Poppins/Poppins-Bold.ttf');
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-weight: bold;
+        font-style: italic;
+        src: url('/assets/fonts/Poppins/Poppins-BoldItalic.ttf');
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-weight: normal;
+        font-style: italic;
+        src: url('/assets/fonts/Poppins/Poppins-Italic.ttf');
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-weight: normal;
+        font-style: normal;
+        src: url('/assets/fonts/Poppins/Poppins-Regular.ttf');
+    }
+
+    /*------- RUBIK -------*/
+    @font-face {
+        font-family: "Rubik";
+        font-weight: 900;
+        font-style: normal;
+        src: url('/assets/fonts/Rubik/Rubik-Black.ttf');
+    }
+    @font-face {
+        font-family: "Rubik";
+        font-weight: bold;
+        font-style: normal;
+        src: url('/assets/fonts/Rubik/Rubik-Bold.ttf');
+    }
+    @font-face {
+        font-family: "Rubik";
+        font-weight: normal;
+        font-style: normal;
+        src: url('/assets/fonts/Rubik/Rubik-Medium.ttf');
+    }
+    @font-face {
+        font-family: "Rubik";
+        font-weight: normal;
+        font-style: italic;
+        src: url('/assets/fonts/Rubik/Rubik-MediumItalic.ttf');
+    }
+
+    /*------- DANCING SCRIPT -------*/
+    @font-face {
+        font-family: "DancingScript";
+        font-weight: 400;
+        font-style: normal;
+        src: url('/assets/fonts/DancingScript/DancingScript-Regular.ttf');
+    }
+    @font-face {
+        font-family: "DancingScript";
+        font-weight: 500;
+        font-style: normal;
+        src: url('/assets/fonts/DancingScript/DancingScript-Medium.ttf');
+    }
+    @font-face {
+        font-family: "DancingScript";
+        font-weight: 600;
+        font-style: normal;
+        src: url('/assets/fonts/DancingScript/DancingScript-SemiBold.ttf');
+    }
+    @font-face {
+        font-family: "DancingScript";
+        font-weight: 700;
+        font-style: normal;
+        src: url('/assets/fonts/DancingScript/DancingScript-Bold.ttf');
+    }
+
+    /*------- ROBOTO -------*/
+    @font-face {
+        font-family: "Roboto";
+        src: url('/assets/fonts/Roboto-VariableFont_wdth,wght.ttf');
+    }
+}

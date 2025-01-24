@@ -1,8 +1,8 @@
 # Portfolio
+###### First stable version launched by 07/07/2023
+Hosted at: https://gdavidev.github.io/portfolio/index.html
 
-###### First stable version lauched by 07/07/2023
-
-## The Stack
-
-- Typescript;
+## The Stack 
+- React with Typescript; 
 - Sass;
+- Icons: FontAwesomeIcons;   
