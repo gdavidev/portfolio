@@ -1,15 +1,16 @@
-import React, {ReactNode, useCallback, useEffect, useState} from "react";
+import type {ReactNode} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import CopyTextContainer from "./CopyTextContainer.tsx";
-import useThrottle from "../hooks/useThrottle.ts";
+import useScrollPosition from "../hooks/Environment/useScrollPosition.ts";
 
 export default function OverlayButtons() {
     return (
         <>
             <CopyTextContainer
-                className='fixed right-24 bottom-14 shadow-md rounded-md'
+                className='fixed right-6 md:right-24 bottom-14 shadow-md rounded-md'
                 text='gdavid.wk2202@gmail.com'/>
-            <div className='fixed bottom-14 right-6 flex justify-center items-center flex-col gap-4'>
+
+            <div className='fixed bottom-28 md:bottom-14 right-6 flex justify-center items-center flex-col gap-4'>
                 <GoToTopButton />
 
                 <OverlayButton
@@ -46,31 +47,15 @@ function OverlayButton(props: OverlayButtonProps) {
 }
 
 function GoToTopButton() {
-    const [scrolled, setScrolled] = useState<boolean>(false);
-
-    const updateScrolled = useThrottle({
-        callback: () => setScrolled(window.scrollY > 500),
-        delay: 200,
-        buffered: true
-    });
-
-    useEffect(() => {
-        window.addEventListener('scroll', updateScrolled);
-        return () => window.removeEventListener('scroll', updateScrolled);
-    }, []);
-
-    const onClick = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, []);
+    const {scrollY, setScrollPosition} = useScrollPosition({ step: 250 });
 
     return (
         <button
-            onClick={onClick}
+            onClick={() => setScrollPosition(0, 'smooth')}
             className={
                 'w-10 h-10 flex select-none shadow-lg rounded-full items-center '
                 + 'justify-center bg-black text-white transition-transform '
-                + (scrolled ? ' scale-100 rotate-0' : ' scale-0 rotate-90')
+                + (scrollY >= 500 ? ' scale-100 rotate-0' : ' scale-0 rotate-90')
             }>
             <FontAwesomeIcon icon={["fas", "arrow-up"]}/>
         </button>
