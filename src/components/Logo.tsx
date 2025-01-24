@@ -1,7 +1,13 @@
 import {Link} from "react-router-dom";
 
-export default function Logo() {
+type LogoProps = {
+    className?: string;
+}
+
+export default function Logo(props: LogoProps) {
     return (
-        <Link to='/' className="font-dancing-script text-3xl">Gabriel David</Link>
+        <Link to='/' className={"font-dancing-script text-3xl " + (props.className ?? '')}>
+            Gabriel David
+        </Link>
     );
 }
