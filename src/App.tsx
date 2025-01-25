@@ -20,7 +20,9 @@ const browserRouter = createBrowserRouter([
             {path: '/projects', element: <Projects/>},
         ]
     },
-]);
+], {
+    basename: "/portfolio"
+});
 
 function Layout() {
     const {pathname} = useLocation()

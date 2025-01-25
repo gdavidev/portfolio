@@ -11,7 +11,7 @@ export type ProjectsData = {
 }
 
 export default function useProjectsData(): UseProjectsDataResult {
-    const { data, isLoading } = useJsonResource<ProjectsData>('PROJECTS', '/data/projects.json');
+    const { data, isLoading } = useJsonResource<ProjectsData>('PROJECTS', '/portfolio/data/projects.json');
 
     return {
         projects: data,
