@@ -17,7 +17,7 @@
     }
 
     .navbar {
-        @apply text-white select-none h-12 items-center flex justify-between px-16 fixed top-0 w-screen
+        @apply text-white select-none h-12 items-center flex justify-between px-12 md:px-16 fixed top-0 w-screen
             transition-[background-color] duration-200 z-10;
     }
 

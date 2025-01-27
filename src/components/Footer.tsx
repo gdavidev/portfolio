@@ -2,7 +2,7 @@ import Logo from "./Logo.tsx";
 
 export default function Footer() {
     return (
-        <footer className="bg-page-background rounded-lg pt-16">
+        <footer className="bg-page-background px-10 sm:px-28 pt-16 pb-28">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <Logo className='mb-4 sm:mb-0' />
