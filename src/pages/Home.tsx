@@ -45,26 +45,26 @@ function HeroBanner() {
     return (
         <>
             <div className={
-                'select-none min-h-[102vh] bg-home-page-hero bg-cover w-full flex flex-col justify-end ps-12 pe-28 pb-36 '
-                + '2xl:pb-20 2xl:ps-28 md:ps-20'
+                'select-none min-h-[102vh] bg-home-page-hero bg-cover bg-center w-full flex flex-col justify-end px-6 pb-72 '
+                + '2xl:pb-20 2xl:ps-28 md:ps-12 md:pe-28 md:pb-36'
             }>
                 <div className={
-                    'flex gap-x-2 relative top-[2.75rem] left-[16rem] '
+                    'flex gap-x-2 relative -top-2 left-0 '
                     + 'md:top-[4.5rem] md:left-[22rem] xl:top-[6rem] xl:left-[36rem]'
                 }>
                     <ContactButton
                         icon={githubIcon}
                         alt='Github'
                         link='https://github.com/gdavidev'
-                        highlightColor='bg-black'/>
+                        highlightColor='bg-emerald-600'/>
                     <ContactButton
                         icon={linkedinIcon}
                         alt='Linkedin'
                         link='https://www.linkedin.com/in/gdavidev/'
-                        highlightColor='bg-sky-600'/>
+                        highlightColor='bg-cyan-500'/>
                 </div>
                 <h1 className={
-                    'font-roboto font-black text-white text-[3.75rem] leading-[2.75rem] '
+                    'font-roboto font-black text-white text-[3.75rem] leading-[3rem] '
                     + 'md:text-[5rem] md:leading-[4.25rem] xl:text-[8rem] xl:leading-[7rem]'
                 }>
                     FullStack<br/>Web Developer
@@ -78,7 +78,7 @@ function HeroBanner() {
 function ContactButton(props: { icon: string, alt: string, link: string, highlightColor: string }) {
     return (
         <a
-            className='group w-16 h-16 duration-100'
+            className='group size-10 md:size-16 duration-100'
             href={props.link}
             style={{
                 maskRepeat: 'no-repeat',
@@ -88,7 +88,7 @@ function ContactButton(props: { icon: string, alt: string, link: string, highlig
             <div className='bg-white w-16 h-16'/>
             <div
                 className={
-                    props.highlightColor + ' rounded-full relative -top-20 -left-3 scale-0 '
+                    props.highlightColor + ' rounded-full relative -top-20 left-0 scale-0 '
                     + 'group-hover:scale-100 duration-200 w-24 h-24'}/>
         </a>
     )
