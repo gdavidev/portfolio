@@ -1,7 +1,7 @@
 {
     "main": [
         {
-            "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            "title": "Análise e Desenvolvimento de Sistemas",
             "desc": "Programação e entendimento geral sobre computadores, inglês técnico, Redes, entre outros.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/ifsp.png",
             "alt": "IFSP - Guarulhos",
@@ -118,7 +118,7 @@
         },
         {
             "title": "Engenharia de Controle e Automação",
-            "desc": "<p style='color: red; font-size: 1rem;'>Trancado</p>Mecatrônica e automação industrial, com conhecimentos em mecânica, elétrica e programação.",
+            "desc": "Mecatrônica e automação industrial, com conhecimentos em mecânica, elétrica e programação.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/extra/eniac.png",
             "alt": "Eniac",
             "link": "https://www.eniac.com.br/cursos/engenharia-de-controle-e-automacao",
