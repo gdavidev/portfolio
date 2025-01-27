@@ -121,11 +121,15 @@ function NavbarDrawerButton(props: {
 }) {
     return (
         <Link
+            to={props.href}
             onClick={() => {
                 if (!props.selected) props.onChange();
             }}
-            className={'px-16 py-2 text-center bg-layout-background rounded-md ' + (props.className ?? '')}
-            to={props.href}>
+            className={
+                'px-16 py-2 text-center bg-layout-background rounded-md '
+                + (props.selected ? 'text-lg underline ' : '')
+                + (props.className ?? '')
+            }>
                 {props.name}
         </Link>
     )

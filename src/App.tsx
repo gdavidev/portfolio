@@ -1,4 +1,4 @@
-import {createBrowserRouter, Outlet, RouterProvider, useLocation} from "react-router-dom";
+import {createHashRouter, Outlet, RouterProvider, useLocation} from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import Footer from "./components/Footer.tsx";
 import Navbar from "./components/Navbar.tsx";
@@ -10,7 +10,7 @@ import OverlayButtons from "./components/OverlayButtons.tsx";
 
 FontAwesomeHelper.initialize();
 
-const browserRouter = createBrowserRouter([
+const browserRouter = createHashRouter([
     {
         path: '/',
         element: <Layout/>,
@@ -20,9 +20,7 @@ const browserRouter = createBrowserRouter([
             {path: '/projects', element: <Projects/>},
         ]
     },
-], {
-    basename: "/portfolio"
-});
+]);
 
 function Layout() {
     const {pathname} = useLocation()
