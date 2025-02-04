@@ -48,6 +48,15 @@
             "progress": "80%"
         },
         {
+            "title": ".NET Core orientado para o mercado de trabalho",
+            "institution": "Udemy",
+            "desc": "Domine .NET: das boas práticas ao Azure, do zero à publicação. Aprenda a criar APIs robustas!",
+            "img_path": "/portfolio/assets/images/thumbnails/courses/dotnetcore.jpg",
+            "alt": ".NET Core",
+            "link": "https://www.udemy.com/course/net-core-curso-orientado-para-mercado-de-trabalho/",
+            "progress": "25%"
+        },
+        {
             "title": "JavaScript e TypeScript",
             "institution": "Udemy",
             "desc": "Javascript e TypeScript - front-end e back-end (Full Stack) - Node, Express, noSQL, React, hooks, Redux, Design Patterns",
