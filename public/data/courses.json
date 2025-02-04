@@ -2,6 +2,7 @@
     "main": [
         {
             "title": "Análise e Desenvolvimento de Sistemas",
+            "institution": "IFSP - Guarulhos",
             "desc": "Programação e entendimento geral sobre computadores, inglês técnico, Redes, entre outros.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/ifsp.png",
             "alt": "IFSP - Guarulhos",
@@ -10,6 +11,7 @@
         },
         {
             "title": "Inglês avançado",
+            "institution": "PBF",
             "desc": "Curso de Inglês com foco em conversação, 3 anos de curso.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/pbf.png",
             "alt": "PBF",
@@ -19,7 +21,8 @@
     ],
     "courses": [
         {
-            "title": "Microsoft AI900 - Senai",
+            "title": "Microsoft AI900",
+            "institution": "SENAI",
             "desc": "Curso introdutório a implementação de inteligência artificial em nuvem usando a plataforma Azure, da Microsoft.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/ai900.png",
             "alt": "Microsoft Ai-900",
@@ -28,6 +31,7 @@
         },
         {
             "title": "Introdução a Redes",
+            "institution": "Cisco Academy",
             "desc": "Introdução aos conceitos e configuração de redes de computadores, cabeada e wifi.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/cisco.jpg",
             "alt": "Cisco Networking Academy",
@@ -35,7 +39,8 @@
             "progress": "100%"
         },
         {
-            "title": "Introdução a Rust - IFSP",
+            "title": "Introdução a Rust",
+            "institution": "IFSP - Guarulhos",
             "desc": "Curso de extensão do IFSP - Guarulhos.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/rust.png",
             "alt": "Rust",
@@ -43,7 +48,17 @@
             "progress": "80%"
         },
         {
+            "title": ".NET Core orientado para o mercado de trabalho",
+            "institution": "Udemy",
+            "desc": "Domine .NET: das boas práticas ao Azure, do zero à publicação. Aprenda a criar APIs robustas!",
+            "img_path": "/portfolio/assets/images/thumbnails/courses/dotnetcore.jpg",
+            "alt": ".NET Core",
+            "link": "https://www.udemy.com/course/net-core-curso-orientado-para-mercado-de-trabalho/",
+            "progress": "25%"
+        },
+        {
             "title": "JavaScript e TypeScript",
+            "institution": "Udemy",
             "desc": "Javascript e TypeScript - front-end e back-end (Full Stack) - Node, Express, noSQL, React, hooks, Redux, Design Patterns",
             "img_path": "/portfolio/assets/images/thumbnails/courses/typescript.jpg",
             "alt": "Typescript",
@@ -52,6 +67,7 @@
         },
         {
             "title": "Desenvolvimento Web Completo",
+            "institution": "Udemy",
             "desc": "Domine Web - 20 Cursos - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP 7, OO, MySQL, JQuery, MVC, APIs, IONIC e muito mais!",
             "img_path": "/portfolio/assets/images/thumbnails/courses/web-dev.jpg",
             "alt": "Web Development",
@@ -60,6 +76,7 @@
         },
         {
             "title": "Programação em Python",
+            "institution": "Udemy",
             "desc": "Aprenda Python 3.8.5 com Expressões Lambdas, Iteradores, Geradores, Orientação a Objetos e muito mais!",
             "img_path": "/portfolio/assets/images/thumbnails/courses/phyton.jpg",
             "alt": "Python",
@@ -68,6 +85,7 @@
         },
         {
             "title": "Game AI fundamentals with Godot Engine",
+            "institution": "Udemy",
             "desc": "Learn how to code common game AI features in the Godot Engine.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/godot-ai.jpg",
             "alt": "Godot Ai",
@@ -76,6 +94,7 @@
         },
         {
             "title": "Curso de Excel, Macro e VBA + Power BI",
+            "institution": "Udemy",
             "desc": "Aprenda desde o início a trabalhar com Excel, VBA e Power BI, crie e automatize relatórios e aumente sua produtividade.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/excel.jpg",
             "alt": "Excel VBA e Macro + Power BI",
@@ -84,6 +103,7 @@
         },
         {
             "title": "Curso Blender 3.0 | Aprenda 3D do Zero!",
+            "institution": "Udemy",
             "desc": "Domine a nova versão do programa.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/blender.jpg",
             "alt": "Blender",
@@ -92,6 +112,7 @@
         },
         {
             "title": "CS50x - Introduction to Computer Science.",
+            "institution": "Harvard",
             "desc": "An introduction to the intellectual enterprises of computer science and the art of programming.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/harvard.png",
             "alt": "Harvard - CS50",
@@ -100,6 +121,7 @@
         },
         {
             "title": "Git e GitHub do básico ao avançado",
+            "institution": "Udemy",
             "desc": "Aprenda do básico ao avançado Git e GitHub, uma abordagem prática para o controle de versão e manutenção de repositórios",
             "img_path": "/portfolio/assets/images/thumbnails/courses/git.jpg",
             "alt": "Git e GitHub",
@@ -110,19 +132,12 @@
     "other": [
         {
             "title": "Eletricista de Manutenção Eletroeletrônica",
+            "institution": "SENAI",
             "desc": "Conhecimentos sobre eletricidade predial e industrial.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/extra/senai.png",
             "alt": "Senai",
             "link": "https://guarulhos.sp.senai.br/curso/77448/122/eletricista-de-manutencao-eletroeletronica",
             "progress": "100%"
-        },
-        {
-            "title": "Engenharia de Controle e Automação",
-            "desc": "Mecatrônica e automação industrial, com conhecimentos em mecânica, elétrica e programação.",
-            "img_path": "/portfolio/assets/images/thumbnails/courses/extra/eniac.png",
-            "alt": "Eniac",
-            "link": "https://www.eniac.com.br/cursos/engenharia-de-controle-e-automacao",
-            "progress": "20%"
         }
     ]
 }
