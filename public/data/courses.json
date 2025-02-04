@@ -129,14 +129,6 @@
             "alt": "Senai",
             "link": "https://guarulhos.sp.senai.br/curso/77448/122/eletricista-de-manutencao-eletroeletronica",
             "progress": "100%"
-        },
-        {
-            "title": "Engenharia de Controle e Automação",
-            "desc": "Mecatrônica e automação industrial, com conhecimentos em mecânica, elétrica e programação.",
-            "img_path": "/portfolio/assets/images/thumbnails/courses/extra/eniac.png",
-            "alt": "Eniac",
-            "link": "https://www.eniac.com.br/cursos/engenharia-de-controle-e-automacao",
-            "progress": "20%"
         }
     ]
 }
