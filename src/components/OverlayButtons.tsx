@@ -7,20 +7,28 @@ export default function OverlayButtons() {
     return (
         <>
             <CopyTextContainer
-                className='fixed right-6 md:right-24 bottom-14 shadow-md rounded-md'
+                className='fixed bottom-6 right-4 md:right-20 shadow-md rounded-md'
                 text='gdavid.wk2202@gmail.com'/>
 
-            <div className='fixed bottom-28 md:bottom-14 right-6 flex justify-center items-center flex-col gap-4'>
+            <div className=' bottom-8 right-4 md:bottom-6 fixed flex justify-center items-center flex-col gap-4'>
                 <GoToTopButton />
 
                 <OverlayButton
-                    icon={<FontAwesomeIcon className='size-8 hover:size-9 duration-100' icon={["fab", "instagram"]}/>}
                     className='text-white bg-instagram-gradient'
-                    href="https://www.instagram.com/gabriel.david.david/" />
+                    href="https://www.instagram.com/gabriel.david.david/"
+                    icon={
+                        <FontAwesomeIcon
+                            className='size-6 md:size-8 hover:size-9 duration-100'
+                            icon={["fab", "instagram"]}/>
+                    }/>
                 <OverlayButton
-                    icon={<FontAwesomeIcon className='size-8 hover:size-9 duration-100' icon={["fab", "whatsapp"]}/>}
                     className='text-white bg-brand-whatsapp'
-                    href="https://wa.link/dg78tr" />
+                    href="https://wa.link/dg78tr"
+                    icon={
+                        <FontAwesomeIcon
+                            className='size-6 md:size-8 hover:size-9 duration-100'
+                            icon={["fab", "whatsapp"]}/>
+                    }/>
             </div>
         </>
     )
@@ -39,7 +47,7 @@ function OverlayButton(props: OverlayButtonProps) {
             href={props.href}
             className={
                 (props.className ?? '')
-                + ' select-none shadow-lg w-14 h-14 items-center justify-center flex p-4 rounded-full'
+                + ' select-none shadow-lg size-10 md:size-14 items-center justify-center flex p-4 rounded-full'
             }>
             {props.icon}
         </a>
@@ -53,7 +61,7 @@ function GoToTopButton() {
         <button
             onClick={() => setScrollPosition(0, 'smooth')}
             className={
-                'w-10 h-10 flex select-none shadow-lg rounded-full items-center '
+                'size-8 md:size-10 flex select-none shadow-lg rounded-full items-center '
                 + 'justify-center bg-black text-white transition-transform '
                 + (scrollY >= 500 ? ' scale-100 rotate-0' : ' scale-0 rotate-90')
             }>
