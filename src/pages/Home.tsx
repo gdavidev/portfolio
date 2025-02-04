@@ -56,12 +56,12 @@ function HeroBanner() {
                         icon={githubIcon}
                         alt='Github'
                         link='https://github.com/gdavidev'
-                        highlightColor='bg-emerald-600'/>
+                        highlightColor='bg-primary-red-light'/>
                     <ContactButton
                         icon={linkedinIcon}
                         alt='Linkedin'
                         link='https://www.linkedin.com/in/gdavidev/'
-                        highlightColor='bg-cyan-500'/>
+                        highlightColor='bg-primary-red-light'/>
                 </div>
                 <h1 className={
                     'font-roboto font-black text-white text-[3.75rem] leading-[3rem] '
@@ -88,7 +88,7 @@ function ContactButton(props: { icon: string, alt: string, link: string, highlig
             <div className='bg-white w-16 h-16'/>
             <div
                 className={
-                    props.highlightColor + ' rounded-full relative -top-20 left-0 scale-0 '
+                    props.highlightColor + ' rounded-full relative -top-20 -left-4 scale-0 '
                     + 'group-hover:scale-100 duration-200 w-24 h-24'}/>
         </a>
     )
