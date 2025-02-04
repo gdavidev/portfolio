@@ -1,5 +1,6 @@
 type Course = {
     title: string;
+    institution: string;
     desc: string;
     img_path: string;
     alt: string;

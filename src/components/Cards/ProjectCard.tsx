@@ -1,6 +1,7 @@
 import {ReactElement} from "react";
 import Project from "../../model/Project.ts";
 import TagContainer from "../TagContainer.tsx";
+import {CardLinkImage} from "./CardBase.tsx";
 
 type ProjectCardProps = {
     project: Project;
@@ -16,15 +17,20 @@ export default function ProjectCard(props: ProjectCardProps): ReactElement {
     const project = props.project;
 
     return (
-        <div className="card grid grid-cols-1 place-items-center xl:place-items-start xl:grid-cols-[30rem_1fr] gap-x-2">
-            <a className="w-full min-h-64 overflow-hidden" href={project.link}>
-                <img className='object-cover h-64 mx-auto' src={project.img_path} alt={project.alt}/>
-            </a>
+        <div className="bg-card-background rounded-md p-4 grid grid-cols-1 place-items-center xl:place-items-start xl:grid-cols-[30rem_1fr] gap-x-2">
+            <CardLinkImage
+                style={{
+                    container: { className: 'w-full min-h-64' },
+                    image: { className: 'h-64' }
+                }}
+                src={project.img_path}
+                link={project.link}
+                alt={project.title} />
             <div className="flex flex-col justify-between h-full">
                 <div className=''>
                     <div className='flex flex-col md:flex-row justify-between'>
                         <div className='flex flex-wrap gap-y-1 gap-x-2 items-baseline'>
-                            <h3 className="card-title !-mb-2">{project.title}</h3>
+                            <h3 className="font-rubik font-bold text-primary text-2xl">{project.title}</h3>
                             <h4 className="text-primary font-rubik text-md">{project.sub_title}</h4>
                         </div>
                         <div className="flex flex-nowrap">

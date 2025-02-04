@@ -1,5 +1,6 @@
 import Course from "../../model/Course.ts";
 import ProgressBar from "../ProgressBar.tsx";
+import {CardLinkImage} from "./CardBase.tsx";
 
 type CardProgressProps = {
     course: Course;
@@ -9,17 +10,16 @@ export default function CourseCard(props: CardProgressProps) {
     const course = props.course;
 
     return (
-        <div className='card flex flex-col gap-y-1'>
-            <div className='grid grid-cols-1 place-items-center lg:place-items-start lg:grid-cols-[14rem_1fr] gap-x-2'>
-                <a className='w-56' href={course.link} target='_blank'>
-                    <img className='object-cover' src={course.img_path} alt={course.alt}/>
-                </a>
+        <div className='grid place-items-start grid-rows-[8rem_1fr] bg-card-background rounded-md p-4'>
+            <CardLinkImage className='w-56' src={course.img_path} link={course.link} alt={course.title} />
+            <div className='flex flex-col gap-y-2 justify-between size-full'>
                 <div>
-                    <h3 className='card-title'>{course.title}</h3>
-                    <p>{course.desc}</p>
+                    <h3 className='font-rubik font-bold text-primary text-2xl'>{course.title}</h3>
+                    <p className='text-gray-500 text-sm -mt-1'>{course.institution}</p>
                 </div>
+                <p className='self-start h-full'>{course.desc}</p>
+                <ProgressBar currentPercentage={course.progress}/>
             </div>
-            <ProgressBar currentPercentage={course.progress}/>
         </div>
     );
 }

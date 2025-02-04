@@ -24,7 +24,8 @@ import {
     faCircle,
     faEnvelope,
     faArrowUp,
-    faSquare
+    faSquare,
+    faArrowUpRightFromSquare
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -54,7 +55,8 @@ export default class FontAwesomeHelper {
             faCircle,
             faDatabase,
             faArrowUp,
-            faEnvelope
+            faEnvelope,
+            faArrowUpRightFromSquare
         );
     }
 }

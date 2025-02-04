@@ -14,7 +14,7 @@ export default function CourseCardsContainer(props: CourseCardsContainerProps) {
         <CardsContainerBase
             title={props.title}
             description={props.description}
-            containerClassName='grid grid-cols-1 2xl:grid-cols-2'
+            containerClassName='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3'
         >
             {!isCoursesLoading &&
                 courses![props.coursesCategory].map(
