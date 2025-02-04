@@ -3,8 +3,8 @@
         {
             "title": "EmuHub",
             "sub_title": "Trabalho de Conclusão de Curso",
-            "desc": "Site criado com o objetivo de exibir os serviços de eletricista e assemelhados, a pagina no momento contém apresentações da empresa e de todos os serviços oferecidos e uma pagina de contato. A pagina tem cunho comercial e tem o objetivo de ser usada pela empresa.",
-            "img_path": "/portfolio/assets/images/thumbnails/projects/CodigoInstalacoesHome.png",
+            "desc": "Site criado com finalidade de apresentar uma interface e forum para jogos eletronicos de emulador, jogos de emulador são jogos que rodam nativamente em consoles que afim de serem jogados no computador utilizam programas que simulam um console. O objetivo do projeto é administrar os jogos do usuário ao mesmo tempo, propondo uma comunidade para discussões sobre o tema.",
+            "img_path": "/portfolio/assets/images/thumbnails/projects/EmuhubForum.png",
             "alt": "EmuHub",
             "tags": ["React", "Typescript", "Tailwind", "Node", "AWS", ".NET", "Delphi"],
             "state": "In Progress"
