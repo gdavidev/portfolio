@@ -14,8 +14,8 @@ export default function ExperienceCard(props: ExperienceCardProps) {
             </a>
             <div className='w-full'>
                 <h3 className='card-title'>{experience.title}</h3>
-                <p className='card_date'>{experience.date}</p>
-                <p className='card_boy'>{experience.desc}</p>
+                <p className='text-gray-500 text-sm -mt-2 mb-2'>{experience.date}</p>
+                <p>{experience.desc}</p>
             </div>
         </div>
 );

@@ -16,7 +16,7 @@ export default function CourseCard(props: CardProgressProps) {
                 </a>
                 <div>
                     <h3 className='card-title'>{course.title}</h3>
-                    <p >{course.desc}</p>
+                    <p>{course.desc}</p>
                 </div>
             </div>
             <ProgressBar currentPercentage={course.progress}/>
