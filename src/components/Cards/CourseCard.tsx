@@ -10,7 +10,10 @@ export default function CourseCard(props: CardProgressProps) {
     const course = props.course;
 
     return (
-        <div className='grid place-items-start grid-rows-[8rem_1fr] bg-card-background rounded-md p-4'>
+        <div className={
+                'grid place-items-start grid-rows-[8rem_1fr] shadow-md '
+                + 'bg-card-background rounded-md p-4'}
+        >
             <CardLinkImage className='w-56' src={course.img_path} link={course.link} alt={course.title} />
             <div className='flex flex-col gap-y-2 justify-between size-full'>
                 <div>

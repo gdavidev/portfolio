@@ -11,7 +11,7 @@ export default function ExperienceCard(props: ExperienceCardProps) {
     return (
         <div className={
             'bg-card-background rounded-md p-4 grid grid-cols-1 place-items-start '
-            + 'lg:grid-cols-[14rem_1fr] gap-x-2'
+            + 'lg:grid-cols-[14rem_1fr] gap-x-2 shadow-md'
         }>
             <CardLinkImage className='w-56' src={experience.img_path} link={experience.link} alt={experience.title} />
             <div className='w-full'>
