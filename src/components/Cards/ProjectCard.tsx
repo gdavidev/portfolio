@@ -17,7 +17,10 @@ export default function ProjectCard(props: ProjectCardProps): ReactElement {
     const project = props.project;
 
     return (
-        <div className="bg-card-background rounded-md p-4 grid grid-cols-1 place-items-center xl:place-items-start xl:grid-cols-[30rem_1fr] gap-x-2">
+        <div className={
+                'bg-card-background rounded-md shadow-md p-4 grid grid-cols-1 place-items-center '
+                + 'xl:place-items-start xl:grid-cols-[30rem_1fr] gap-x-2'}
+        >
             <CardLinkImage
                 style={{
                     container: { className: 'w-full min-h-64' },
