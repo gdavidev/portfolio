@@ -14,7 +14,7 @@ export default function ExperienceCardsContainer(props: ExperienceCardsContainer
         <CardsContainerBase
             title={props.title}
             description={props.description}
-            containerClassName='card_column'
+            containerClassName='grid grid-cols-1'
         >
             {!isExperiencesLoading &&
                 experiences![props.experiencesCategory].map(
