@@ -1,6 +1,14 @@
 {
     "main": [
         {
+            "title": "WeVets - Programador C#.NET, AngularJS, React e Analista Sydle",
+            "desc": "Grande empresa que abrange mais de 300 hospitais veterinários no Brasil e Portugal, atuei no setor de TI com foco no sistema de gerenciamento dos hospitais com tecnologias como C#.NET, AngularJS, React e também com automação de tarefas na Plataforma Sydle. A empresa pratica metodologias Ágeis usando como ferramenta o Azure Devops e Microsoft Teams",
+            "date": "FEV/2025 ~ Hoje (Estagiário)",
+            "img_path": "/portfolio/assets/images/thumbnails/exp/wevets.jpg",
+            "alt": "WeVets",
+            "link": "https://www.wevets.com.br/"
+        },
+        {
             "title": "Calcgraf - Programador VB.NET Fullstack e VB6 Trainee",
             "desc": "Manutenção e extensão de um sistema de ERP Web em VB.NET (WebForms) focado na indústria gráfica. Além de manutenção no sistema de ERP Desktop em VB6 e outras ferramentas internas em VB.NET (WindowsForms).",
             "date": "DEZ/2023 ~ JUL/2024 (Estagiário) - AGO/2024 ~ NOV/2024 (Trainee)",
