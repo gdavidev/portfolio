@@ -80,6 +80,7 @@ function ContactButton(props: { icon: string, alt: string, link: string, highlig
         <a
             className='group size-10 md:size-16 duration-100'
             href={props.link}
+            target="_blank"
             style={{
                 maskRepeat: 'no-repeat',
                 maskSize: '100%',
