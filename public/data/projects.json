@@ -18,6 +18,26 @@
             "tags": ["React", "Typescript", "SASS", "GitHub Pages"],
             "state": "Stable",
             "link": "https://gdavidev.github.io/portfolio/"
+        },
+        {
+            "title": "Maquina Quiz Promocional",
+            "sub_title": "Freelance",
+            "desc": "Criado com o objetivo de ser apresentado em um evento no stand da empresa, servindo brindes para os jogadores com um QR code no final.",
+            "img_path": "/portfolio/assets/images/thumbnails/projects/QuizMachine.png",
+            "alt": "Quiz",
+            "tags": ["JavaScript", "Node", "Express", "CSS", "HTML", "Webpack", "Sqlite"],
+            "state": "Stable",
+            "link": "https://github.com/gdavidev/Quiz-Machine-Nodejs"
+        },
+        {
+            "title": "Localizador de Revendedores",
+            "sub_title": "Freelance",
+            "desc": "Criado com o objetivo de ser apresentado em um evento no stand da empresa, apresentando um catalogo interativo e também uma pesquisa de revendedores.",
+            "img_path": "/portfolio/assets/images/thumbnails/projects/ResellersLocator.png",
+            "alt": "ResellersLocator",
+            "tags": ["React", "Node", "Typescript", "CSS", "Express", "Sqlite"],
+            "state": "Stable",
+            "link": "https://github.com/gdavidev/Resellers-Locator-App"
         }
     ]
 }
