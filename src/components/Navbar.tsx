@@ -40,9 +40,9 @@ function NavbarInline(props: { onChange: () => void }) {
                 selected={pathname === '/'}/>
             <NavbarInlineButton
                 onChange={props.onChange}
-                name='Formação'
-                href='/formation'
-                selected={pathname === '/formation'}/>
+                name='Experiências'
+                href='/experiences'
+                selected={pathname === '/experiences'}/>
             <NavbarInlineButton
                 onChange={props.onChange}
                 name='Projetos'
@@ -99,8 +99,8 @@ function NavbarDrawer(props: { onChange: () => void }) {
                     onChange={onChange}
                     className={'transition delay-[50ms]' + (open ? " " : " translate-x-full")}
                     name='Formação'
-                    href='/formation'
-                    selected={pathname === '/formation'}/>
+                    href='/experiences'
+                    selected={pathname === '/experiences'}/>
                 <NavbarDrawerButton
                     onChange={onChange}
                     className={'transition delay-100' + (open ? " " : " translate-x-full")}

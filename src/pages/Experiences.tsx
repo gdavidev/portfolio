@@ -1,15 +1,9 @@
 import ExperienceCardsContainer from "../components/Cards/Containers/ExperienceCardsContainer.tsx";
 import CourseCardsContainer from "../components/Cards/Containers/CourseCardsContainer.tsx";
 
-export default function Formation() {
+export default function Experiences() {
     return (
         <div className="page-content" style={{paddingTop: '4.5rem'}}>
-            <h1>Formação acadêmica</h1>
-            <p className="descricao_do_topico">Um levantamento de todos os cursos em que ja terminei, comecei ou tenho o
-                interesse em começar. <br/>
-                (clique nas imagens para acessar o site do curso/empresa).
-            </p>
-
             <ExperienceCardsContainer
                 title='Experiência Profissional'
                 description='Minhas maiores experiencias como programador'
@@ -22,7 +16,7 @@ export default function Formation() {
 
             <CourseCardsContainer
                 title='Cursos Extracurriculares'
-                description='Informação pessoal adicional referente ao meu aprendizado.'
+                description='Um levantamento de todos os cursos em que ja terminei, comecei ou tenho o interesse em começar..'
                 coursesCategory='courses'/>
 
             <CourseCardsContainer

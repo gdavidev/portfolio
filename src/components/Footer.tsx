@@ -17,6 +17,7 @@ export default function Footer() {
                         <li>
                             <a
                                 href="https://wa.link/dg78tr"
+                                target="_blank"
                                 className="hover:underline cursor-pointer">
                                     Whatsapp
                             </a>
@@ -25,7 +26,9 @@ export default function Footer() {
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8"/>
                 <span className="block text-sm text-font-dark sm:text-center">© 2025 <a
-                    href="https://flowbite.com/" className="hover:underline">GABRIEL DAVID™</a>. All Rights Reserved.</span>
+                    href="https://gdavidev.github.io/portfolio/" target="_blank" className="hover:underline">
+                    GABRIEL DAVID™</a>. All Rights Reserved.
+                </span>
             </div>
         </footer>
     );

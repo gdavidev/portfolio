@@ -2,7 +2,7 @@ type Tag = {
     name: string
     text_color: string
     bg_color: string
-    icon: {
+    icon?: {
         collection: string
         name: string
     }

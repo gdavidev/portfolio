@@ -2,7 +2,7 @@ import {createHashRouter, Outlet, RouterProvider, useLocation} from "react-route
 import Home from "./pages/Home.tsx";
 import Footer from "./components/Footer.tsx";
 import Navbar from "./components/Navbar.tsx";
-import Formation from "./pages/Formation.tsx";
+import Experiences from "./pages/Experiences.tsx";
 import Projects from "./pages/Projects.tsx";
 import CacheProvider from "./context/CacheProvider.tsx";
 import FontAwesomeHelper from "./scripts/FontAwesomeHelper.ts";
@@ -16,7 +16,7 @@ const browserRouter = createHashRouter([
         element: <Layout/>,
         children: [
             {path: '/', element: <Home/>},
-            {path: '/formation', element: <Formation/>},
+            {path: '/experiences', element: <Experiences/>},
             {path: '/projects', element: <Projects/>},
         ]
     },

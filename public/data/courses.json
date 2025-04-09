@@ -45,7 +45,7 @@
             "img_path": "/portfolio/assets/images/thumbnails/courses/rust.png",
             "alt": "Rust",
             "link": "http://gru.ifsp.edu.br/index.php",
-            "progress": "80%"
+            "progress": "100%"
         },
         {
             "title": ".NET Core orientado para o mercado de trabalho",
@@ -54,7 +54,7 @@
             "img_path": "/portfolio/assets/images/thumbnails/courses/dotnetcore.jpg",
             "alt": ".NET Core",
             "link": "https://www.udemy.com/course/net-core-curso-orientado-para-mercado-de-trabalho/",
-            "progress": "25%"
+            "progress": "35%"
         },
         {
             "title": "JavaScript e TypeScript",

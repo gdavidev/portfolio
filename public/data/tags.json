@@ -161,6 +161,16 @@
                 "collection": "fab",
                 "name": "sass"
             }
+        },
+        {
+            "name": "Express",
+            "text_color": "white",
+            "bg_color": "black"
+        },
+        {
+            "name": "Webpack",
+            "text_color": "white",
+            "bg_color": "rgb(48, 170, 221)"
         }
     ]
 }
