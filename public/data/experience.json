@@ -1,9 +1,9 @@
 {
     "main": [
         {
-            "title": "WeVets - Programador C#.NET, AngularJS, React e Analista Sydle",
-            "desc": "Grande empresa que abrange mais de 300 hospitais veterinários no Brasil e Portugal, atuei no setor de TI com foco no sistema de gerenciamento dos hospitais com tecnologias como C#.NET, AngularJS, React e também com automação de tarefas na Plataforma Sydle. A empresa pratica metodologias Ágeis usando como ferramenta o Azure Devops e Microsoft Teams",
-            "date": "FEV/2025 ~ Hoje (Estagiário)",
+            "title": "WeVets - Programador NestJs, Next, C#.NET e AngularJS.",
+            "desc": "Grande empresa que abrange mais de 300 hospitais veterinários no Brasil e Portugal, atuei no setor de TI com foco no sistema de agendamento dos clientes usando Next e NestJS, e também no sistema de gerenciamento dos hospitais com tecnologias como C#.NET e AngularJS. A empresa pratica metodologias Ágeis usando como ferramenta o Azure Devops e Microsoft Teams",
+            "date": "FEV/2025 ~ SET/2025 (Estagiário) - SET/2025 ~ Hoje (Junior I)",
             "img_path": "/portfolio/assets/images/thumbnails/exp/wevets.jpg",
             "alt": "WeVets",
             "link": "https://www.wevets.com.br/"
