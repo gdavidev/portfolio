@@ -3,11 +3,11 @@
         {
             "title": "Análise e Desenvolvimento de Sistemas",
             "institution": "IFSP - Guarulhos",
-            "desc": "Programação e entendimento geral sobre computadores, inglês técnico, Redes, entre outros.",
+            "desc": "Programação e entendimento geral sobre computadores, inglês técnico, redes, análise de dados e etc.",
             "img_path": "/portfolio/assets/images/thumbnails/courses/ifsp.png",
-            "alt": "IFSP - Guarulhos",
+            "alt": "IFSP - Campus Guarulhos",
             "link": "https://gru.ifsp.edu.br/index.php/superiores/tecnologia-em-analise-e-desenvolvimento-de-sistemas.html",
-            "progress": "73%"
+            "progress": "100%"
         },
         {
             "title": "Inglês avançado",
@@ -54,7 +54,7 @@
             "img_path": "/portfolio/assets/images/thumbnails/courses/dotnetcore.jpg",
             "alt": ".NET Core",
             "link": "https://www.udemy.com/course/net-core-curso-orientado-para-mercado-de-trabalho/",
-            "progress": "35%"
+            "progress": "40%"
         },
         {
             "title": "JavaScript e TypeScript",
@@ -117,7 +117,7 @@
             "img_path": "/portfolio/assets/images/thumbnails/courses/harvard.png",
             "alt": "Harvard - CS50",
             "link": "https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0",
-            "progress": "00%"
+            "progress": "05%"
         },
         {
             "title": "Git e GitHub do básico ao avançado",
