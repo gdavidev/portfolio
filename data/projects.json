@@ -7,7 +7,7 @@
             "img_path": "/portfolio/assets/images/thumbnails/projects/EmuhubForum.png",
             "alt": "EmuHub",
             "tags": ["React", "Typescript", "Tailwind", "Node", "AWS", ".NET", "Delphi"],
-            "state": "In Progress"
+            "state": "Stable"
         },
         {
             "title": "Este Portfólio",
